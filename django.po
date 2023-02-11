@@ -1,69 +1,6 @@
-# #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Swedish (http://www.transifex.com/open-edx/edx-platform/language/sv/).
-# Copyright (C) 2019 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Emil Molander, 2015
-# Kristoffer Grundström <hamnisdude@gmail.com>, 2015
-# Magnús Ársælsson <magnus@craftacademy.se>, 2018
-# Thomas Ochman <thomas@nocebo.se>, 2018
-# #-#-#-#-#  django-studio.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Swedish (http://www.transifex.com/open-edx/edx-platform/language/sv/).
-# Copyright (C) 2019 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Kristoffer Grundström <hamnisdude@gmail.com>, 2015
-# Magnús Ársælsson <magnus@craftacademy.se>, 2018
-# Sophie Sjoberg <sophie.sjoberg@gmail.com>, 2018
-# Thomas Ochman <thomas@nocebo.se>, 2018
-# #-#-#-#-#  mako.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Swedish (http://www.transifex.com/open-edx/edx-platform/language/sv/)
-# Copyright (C) 2019 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Johan Sannemo <johan.sannemo@gmail.com>, 2016
-# Kristoffer Grundström <hamnisdude@gmail.com>, 2015
-# Magnús Ársælsson <magnus@craftacademy.se>, 2018
-# Thomas Ochman <thomas@nocebo.se>, 2018
-# #-#-#-#-#  mako-studio.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Swedish (http://www.transifex.com/open-edx/edx-platform/language/sv/)
-# Copyright (C) 2019 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Kristoffer Grundström <hamnisdude@gmail.com>, 2015
-# Magnús Ársælsson <magnus@craftacademy.se>, 2018
-# Mathias Clarstedt <mathias.clarstedt@gmail.com>, 2018
-# Thomas Ochman <thomas@nocebo.se>, 2018
-# #-#-#-#-#  wiki.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Swedish (http://www.transifex.com/open-edx/edx-platform/language/sv/)
-# Copyright (C) 2019 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Emil Molander, 2015
-# Johan Sannemo <johan.sannemo@gmail.com>, 2016
-# Kevin F <kevinfurmanski98@gmail.com>, 2015
-# Mathias Clarstedt <mathias.clarstedt@gmail.com>, 2018
-# Sophie Sjoberg <sophie.sjoberg@gmail.com>, 2018
-# Thomas Ochman <thomas@nocebo.se>, 2018
+
 msgid ""
 msgstr ""
-"Project-Id-Version: edx-platform\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2019-10-06 20:42+0000\n"
-"PO-Revision-Date: 2018-11-03 09:06+0000\n"
-"Last-Translator: Mathias Clarstedt <mathias.clarstedt@gmail.com>\n"
-"Language-Team: Swedish (http://www.transifex.com/open-edx/edx-platform/language/sv/)\n"
-"Language: sv\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 1.3\n"
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: 'Discussion' refers to the tab in the courseware that leads to
@@ -3831,7 +3768,7 @@ msgstr ""
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 #: lms/djangoapps/lms_xblock/mixin.py
 msgid "If true, can be seen only by course staff, regardless of start date."
-msgstr ""
+msgstr "If true, can be seen only by workshop staff, regardless of start date."
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid "GIT URL"
@@ -4797,11 +4734,13 @@ msgid ""
 "Completed the course \"{course_name}\" ({course_mode}, {start_date} - "
 "{end_date})"
 msgstr ""
+"Completed the workshop \"{course_name}\" ({course_mode}, {start_date} - "
+"{end_date})"
 
 #: lms/djangoapps/badges/events/course_complete.py
 #, python-brace-format
 msgid "Completed the course \"{course_name}\" ({course_mode})"
-msgstr ""
+msgstr "Completed the workshop \"{course_name}\" ({course_mode})"
 
 #: lms/djangoapps/badges/models.py
 msgid "The badge image must be square."
@@ -4817,7 +4756,7 @@ msgstr ""
 
 #: lms/djangoapps/badges/models.py
 msgid "The course mode for this badge image. For example, \"verified\" or \"honor\"."
-msgstr ""
+msgstr "The workshop mode for this badge image. For example, \"verified\" or \"honor\"."
 
 #: lms/djangoapps/badges/models.py
 msgid ""
@@ -4830,6 +4769,9 @@ msgid ""
 "any course modes that do not have a specified badge image. You can have only"
 " one default image."
 msgstr ""
+"Set this value to True if you want this image to be the default image for "
+"any workshop modes that do not have a specified badge image. You can have only"
+" one default image."
 
 #: lms/djangoapps/badges/models.py
 msgid "There can be only one default image."
@@ -4848,6 +4790,9 @@ msgid ""
 "comma, and the slug of a badge class you have created that has the issuing "
 "component 'openedx__course'. For example: 3,enrolled_3_courses"
 msgstr ""
+"On each line, put the number of enrolled workshops to award a badge for, a "
+"comma, and the slug of a badge class you have created that has the issuing "
+"component 'openedx__course'. For example: 3,enrolled_3_courses"
 
 #: lms/djangoapps/badges/models.py
 msgid ""
@@ -4857,6 +4802,11 @@ msgid ""
 "learner needs to complete to be awarded the badge. For example: "
 "slug_for_compsci_courses_group_badge,course-v1:CompSci+Course+First,course-v1:CompsSci+Course+Second"
 msgstr ""
+"Each line is a comma-separated list. The first item in each line is the slug"
+" of a badge class you have created that has an issuing component of "
+"'openedx__course'. The remaining items in each line are the workshop keys the "
+"learner needs to complete to be awarded the badge. For example: "
+"slug_for_compsci_workshops_group_badge,workshop-v1:CompSci+Workshop+First,workshop-v1:CompsSci+Workshop+Second"
 
 #: lms/djangoapps/badges/models.py
 msgid "Please check the syntax of your entry."
@@ -4864,7 +4814,7 @@ msgstr ""
 
 #: lms/djangoapps/branding/api.py
 msgid "Take free online courses at edX.org"
-msgstr ""
+msgstr "Take free online workshops at edX.org"
 
 #. Translators: 'edX' and 'Open edX' are trademarks of 'edX Inc.'.
 #. Please do not translate any of these trademarks and company names.
@@ -5003,7 +4953,7 @@ msgstr ""
 #: lms/djangoapps/bulk_email/tasks.py
 #, python-brace-format
 msgid "\"{course_title}\" Course Staff"
-msgstr ""
+msgstr "\"{course_title}\" Workshop Staff"
 
 #: lms/djangoapps/ccx/plugins.py
 msgid "CCX Coach"
@@ -5014,11 +4964,13 @@ msgid ""
 "A CCX can only be created on this course through an external service. "
 "Contact a course admin to give you access."
 msgstr ""
+"A CCX can only be created on this workshop through an external service. "
+"Contact a workshop admin to give you access."
 
 #: lms/djangoapps/ccx/utils.py
 #, python-brace-format
 msgid "The course is full: the limit is {max_student_enrollments_allowed}"
-msgstr ""
+msgstr "The workshop is full: the limit is {max_student_enrollments_allowed}"
 
 #: lms/djangoapps/ccx/views.py
 msgid "You must be a CCX Coach to access this view."
@@ -5033,6 +4985,8 @@ msgid ""
 "You cannot create a CCX from a course using a deprecated id. Please create a"
 " rerun of this course in the studio to allow this action."
 msgstr ""
+"You cannot create a CCX from a workshop using a deprecated id. Please create a"
+" rerun of this workshop in the studio to allow this action."
 
 #: lms/djangoapps/certificates/models.py wiki/admin.py wiki/models/article.py
 msgid "created"
@@ -5120,7 +5074,7 @@ msgstr ""
 
 #: lms/djangoapps/certificates/models.py
 msgid "The course mode for this template."
-msgstr ""
+msgstr "The workshop mode for this template."
 
 #: lms/djangoapps/certificates/models.py
 msgid "On/Off switch."
@@ -5152,12 +5106,12 @@ msgstr ""
 #: lms/djangoapps/certificates/views/support.py
 #, python-brace-format
 msgid "Course id '{course_id}' is not valid"
-msgstr ""
+msgstr "Workshop id '{course_id}' is not valid"
 
 #: lms/djangoapps/certificates/views/support.py
 #, python-brace-format
 msgid "The course does not exist against the given key '{course_key}'"
-msgstr ""
+msgstr "The workshop does not exist against the given key '{course_key}'"
 
 #: lms/djangoapps/certificates/views/support.py
 #, python-brace-format
@@ -5167,17 +5121,17 @@ msgstr ""
 #: lms/djangoapps/certificates/views/support.py
 #, python-brace-format
 msgid "{course_key} is not a valid course key"
-msgstr ""
+msgstr "{course_key} is not a valid workshop key"
 
 #: lms/djangoapps/certificates/views/support.py
 #, python-brace-format
 msgid "The course {course_key} does not exist"
-msgstr ""
+msgstr "The workshop {course_key} does not exist"
 
 #: lms/djangoapps/certificates/views/support.py
 #, python-brace-format
 msgid "User {username} is not enrolled in the course {course_key}"
-msgstr ""
+msgstr "User {username} is not enrolled in the workshop {course_key}"
 
 #: lms/djangoapps/certificates/views/support.py
 msgid "An unexpected error occurred while regenerating certificates."
@@ -5191,6 +5145,9 @@ msgid ""
 "the honor code established by {platform_name} and has completed all of the "
 "required tasks for this course under its guidelines."
 msgstr ""
+"An {cert_type} certificate signifies that a learner has agreed to abide by "
+"the honor code established by {platform_name} and has completed all of the "
+"required tasks for this workshop under its guidelines."
 
 #. Translators:  This text describes the 'ID Verified' course certificate
 #. type, which is a higher level of
@@ -5205,6 +5162,11 @@ msgid ""
 "certificate also indicates that the identity of the learner has been checked"
 " and is valid."
 msgstr ""
+"A {cert_type} certificate signifies that a learner has agreed to abide by "
+"the honor code established by {platform_name} and has completed all of the "
+"required tasks for this workshop under its guidelines. A {cert_type} "
+"certificate also indicates that the identity of the learner has been checked"
+" and is valid."
 
 #. Translators:  This text describes the 'XSeries' course certificate type.
 #. An XSeries is a collection of
@@ -5256,6 +5218,8 @@ msgid ""
 "{platform_name} acknowledges achievements through certificates, which are "
 "awarded for course activities that {platform_name} students complete."
 msgstr ""
+"{platform_name} acknowledges achievements through certificates, which are "
+"awarded for workshop activities that {platform_name} students complete."
 
 #. Translators:  'All rights reserved' is a legal term used in copyrighting to
 #. protect published content
@@ -5370,23 +5334,26 @@ msgid ""
 "a course of study offered by {partner_short_name}, an online learning "
 "initiative of {partner_long_name}."
 msgstr ""
+"a workshop of study offered by {partner_short_name}, an online learning "
+"initiative of {partner_long_name}."
 
 #. Translators:  This text represents the description of course
 #: lms/djangoapps/certificates/views/webview.py
 #, python-brace-format
 msgid "a course of study offered by {partner_short_name}."
-msgstr ""
+msgstr "a workshop of study offered by {partner_short_name}."
 
 #: lms/djangoapps/certificates/views/webview.py
 #, python-brace-format
 msgid "I completed the {course_title} course on {platform_name}."
-msgstr ""
+msgstr "I completed the {course_title} workshop on {platform_name}."
 
 #: lms/djangoapps/certificates/views/webview.py
 #, python-brace-format
 msgid ""
 "I completed a course at {platform_name}. Take a look at my certificate."
 msgstr ""
+"I completed a workshop at {platform_name}. Take a look at my certificate."
 
 #: lms/djangoapps/certificates/views/webview.py
 #, python-brace-format
@@ -5465,12 +5432,12 @@ msgstr ""
 #: lms/djangoapps/commerce/api/v1/serializers.py
 #, python-brace-format
 msgid "{course_id} is not a valid course key."
-msgstr ""
+msgstr "{course_id} is not a valid workshop key."
 
 #: lms/djangoapps/commerce/api/v1/serializers.py
 #, python-brace-format
 msgid "Course {course_id} does not exist."
-msgstr ""
+msgstr "Workshop {course_id} does not exist."
 
 #: lms/djangoapps/commerce/models.py
 msgid "Use the checkout page hosted by the E-Commerce service."
@@ -5478,7 +5445,7 @@ msgstr ""
 
 #: lms/djangoapps/commerce/models.py
 msgid "Path to course(s) checkout page hosted by the E-Commerce service."
-msgstr ""
+msgstr "Path to workshop(s) checkout page hosted by the E-Commerce service."
 
 #: lms/djangoapps/commerce/models.py openedx/core/djangoapps/catalog/models.py
 #: openedx/core/djangoapps/credentials/models.py
@@ -5556,6 +5523,8 @@ msgid ""
 "If your course does not appear on your dashboard, contact "
 "{payment_support_link}."
 msgstr ""
+"If your workshop does not appear on your dashboard, contact "
+"{payment_support_link}."
 
 #: lms/djangoapps/course_goals/models.py
 msgid "Earn a certificate"
@@ -5563,11 +5532,11 @@ msgstr ""
 
 #: lms/djangoapps/course_goals/models.py
 msgid "Complete the course"
-msgstr ""
+msgstr "Complete the workshop"
 
 #: lms/djangoapps/course_goals/models.py
 msgid "Explore the course"
-msgstr ""
+msgstr "Explore the workshop"
 
 #: lms/djangoapps/course_goals/models.py
 msgid "Not sure yet"
@@ -5588,7 +5557,7 @@ msgstr ""
 
 #: lms/djangoapps/course_wiki/views.py
 msgid "Course page automatically created."
-msgstr ""
+msgstr "Workshop page automatically created."
 
 #: lms/djangoapps/course_wiki/views.py
 #, python-brace-format
@@ -5597,15 +5566,15 @@ msgstr ""
 
 #: lms/djangoapps/course_wiki/views.py
 msgid "Visit a course wiki to add an article."
-msgstr ""
+msgstr "Visit a workshop wiki to add an article."
 
 #: lms/djangoapps/courseware/access_response.py
 msgid "Course has not started"
-msgstr ""
+msgstr "Workshop has not started"
 
 #: lms/djangoapps/courseware/access_response.py
 msgid "Course does not start until {}"
-msgstr ""
+msgstr "Workshop does not start until {}"
 
 #: lms/djangoapps/courseware/access_response.py
 msgid "You have unfulfilled milestones"
@@ -5613,11 +5582,11 @@ msgstr ""
 
 #: lms/djangoapps/courseware/access_response.py
 msgid "You do not have access to this course"
-msgstr ""
+msgstr "You do not have access to this workshop"
 
 #: lms/djangoapps/courseware/access_response.py
 msgid "You do not have access to this course on a mobile device"
-msgstr ""
+msgstr "You do not have access to this workshop on a mobile device"
 
 #: lms/djangoapps/courseware/course_tools.py
 #: lms/templates/dashboard/_dashboard_course_listing.html
@@ -5641,7 +5610,7 @@ msgstr ""
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "Course Starts"
-msgstr ""
+msgstr "Workshop Starts"
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "Don't forget to add a calendar reminder!"
@@ -5650,16 +5619,16 @@ msgstr ""
 #: lms/djangoapps/courseware/date_summary.py
 #, python-brace-format
 msgid "Course starts in {time_remaining_string} on {course_start_date}."
-msgstr ""
+msgstr "Workshop starts in {time_remaining_string} on {course_start_date}."
 
 #: lms/djangoapps/courseware/date_summary.py
 #, python-brace-format
 msgid "Course starts in {time_remaining_string} at {course_start_time}."
-msgstr ""
+msgstr "Workshop starts in {time_remaining_string} at {course_start_time}."
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "Course End"
-msgstr ""
+msgstr "Workshop End"
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid ""
@@ -5668,23 +5637,25 @@ msgstr ""
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "After this date, course content will be archived."
-msgstr ""
+msgstr "After this date, workshop content will be archived."
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid ""
 "This course is archived, which means you can review course content but it is"
 " no longer active."
 msgstr ""
+"This workshop is archived, which means you can review workshop content but it is"
+" no longer active."
 
 #: lms/djangoapps/courseware/date_summary.py
 #, python-brace-format
 msgid "This course is ending in {time_remaining_string} on {course_end_date}."
-msgstr ""
+msgstr "This workshop is ending in {time_remaining_string} on {course_end_date}."
 
 #: lms/djangoapps/courseware/date_summary.py
 #, python-brace-format
 msgid "This course is ending in {time_remaining_string} at {course_end_time}."
-msgstr ""
+msgstr "This workshop is ending in {time_remaining_string} at {course_end_time}."
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "Certificate Available"
@@ -5709,7 +5680,7 @@ msgstr ""
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "We are working on generating course certificates."
-msgstr ""
+msgstr "We are working on generating workshop certificates."
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "Upgrade to Verified Certificate"
@@ -5730,6 +5701,8 @@ msgid ""
 "You are still eligible to upgrade to a Verified Certificate! Pursue it to "
 "highlight the knowledge and skills you gain in this course."
 msgstr ""
+"You are still eligible to upgrade to a Verified Certificate! Pursue it to "
+"highlight the knowledge and skills you gain in this workshop."
 
 #. Translators: This describes the time by which the user
 #. should upgrade to the verified track. 'date' will be
@@ -5760,6 +5733,10 @@ msgid ""
 "your identity on {platform_name} if you have not done so "
 "already.{button_panel}"
 msgstr ""
+"In order to qualify for a certificate, you must meet all workshop grading "
+"requirements, upgrade before the workshop deadline, and successfully verify "
+"your identity on {platform_name} if you have not done so "
+"already.{button_panel}"
 
 #: lms/djangoapps/courseware/date_summary.py
 #, python-brace-format
@@ -5790,6 +5767,8 @@ msgid ""
 "Unfortunately you missed this course's deadline for a successful "
 "verification."
 msgstr ""
+"Unfortunately you missed this workshop's deadline for a successful "
+"verification."
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid ""
@@ -5803,6 +5782,8 @@ msgid ""
 "There is no user with the username or email address u\"{user_identifier}\" "
 "enrolled in this course."
 msgstr ""
+"There is no user with the username or email address u\"{user_identifier}\" "
+"enrolled in this workshop."
 
 #: lms/djangoapps/courseware/masquerade.py
 msgid ""
@@ -5815,6 +5796,8 @@ msgid ""
 "This type of component cannot be shown while viewing the course as a "
 "specific student."
 msgstr ""
+"This type of component cannot be shown while viewing the workshop as a "
+"specific student."
 
 #: lms/djangoapps/courseware/models.py
 msgid ""
@@ -5823,7 +5806,7 @@ msgstr ""
 
 #: lms/djangoapps/courseware/models.py
 msgid "Disable the dynamic upgrade deadline for this course run."
-msgstr ""
+msgstr "Disable the dynamic upgrade deadline for this workshop run."
 
 #: lms/djangoapps/courseware/models.py
 msgid "Disable the dynamic upgrade deadline for this organization."
@@ -5853,6 +5836,8 @@ msgid ""
 "You are not signed in. To see additional course content, {sign_in_link} or "
 "{register_link}, and enroll in this course."
 msgstr ""
+"You are not signed in. To see additional workshop content, {sign_in_link} or "
+"{register_link}, and enroll in this workshop."
 
 #: lms/djangoapps/courseware/views/index.py
 #: lms/djangoapps/courseware/views/views.py
@@ -5876,6 +5861,8 @@ msgid ""
 "You are enrolled in the audit track for this course. The audit track does "
 "not include a certificate."
 msgstr ""
+"You are enrolled in the audit track for this workshop. The audit track does "
+"not include a certificate."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Your enrollment: Honor track"
@@ -5886,6 +5873,8 @@ msgid ""
 "You are enrolled in the honor track for this course. The honor track does "
 "not include a certificate."
 msgstr ""
+"You are enrolled in the honor track for this workshop. The honor track does "
+"not include a certificate."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "We're working on it..."
@@ -5896,6 +5885,8 @@ msgid ""
 "We're creating your certificate. You can keep working in your courses and a "
 "link to it will appear here and on your Dashboard when it is ready."
 msgstr ""
+"We're creating your certificate. You can keep working in your workshops and a "
+"link to it will appear here and on your Dashboard when it is ready."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Your certificate has been invalidated"
@@ -5903,7 +5894,7 @@ msgstr ""
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Please contact your course team if you have any questions."
-msgstr ""
+msgstr "Please contact your workshop team if you have any questions."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Congratulations, you qualified for a certificate!"
@@ -5911,7 +5902,7 @@ msgstr ""
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "You've earned a certificate for this course."
-msgstr ""
+msgstr "You've earned a certificate for this workshop."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Certificate unavailable"
@@ -5931,7 +5922,7 @@ msgstr ""
 #: lms/djangoapps/courseware/views/views.py
 #, python-brace-format
 msgid "To see course content, {sign_in_link} or {register_link}."
-msgstr ""
+msgstr "To see workshop content, {sign_in_link} or {register_link}."
 
 #: lms/djangoapps/courseware/views/views.py
 #: openedx/features/course_experience/views/course_home_messages.py
@@ -5953,11 +5944,13 @@ msgid ""
 "You must be enrolled in the course to see course content."
 "                             {enroll_link_start}Enroll now{enroll_link_end}."
 msgstr ""
+"You must be enrolled in the workshop to see workshop content."
+"                             {enroll_link_start}Enroll now{enroll_link_end}."
 
 #: lms/djangoapps/courseware/views/views.py
 #: openedx/features/course_experience/views/course_home_messages.py
 msgid "You must be enrolled in the course to see course content."
-msgstr ""
+msgstr "You must be enrolled in the workshop to see workshop content."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Invalid location."
@@ -5975,11 +5968,11 @@ msgstr ""
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Course is not valid"
-msgstr ""
+msgstr "Workshop is not valid"
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Your certificate will be available when you pass the course."
-msgstr ""
+msgstr "Your certificate will be available when you pass the workshop."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Certificate has already been created."
@@ -5996,6 +5989,9 @@ msgid ""
 "To apply for financial assistance, enroll in the audit track for a course that offers Verified Certificates, and then complete this application. Note that you must complete a separate application for each course you take.\n"
 " We plan to use this information to evaluate your application for financial assistance and to further develop our financial assistance program."
 msgstr ""
+"{platform_name} now offers financial assistance for learners who want to earn Verified Certificates but who may not be able to pay the Verified Certificate fee. Eligible learners may receive up to 90{percent_sign} off the Verified Certificate fee for a workshop.\n"
+"To apply for financial assistance, enroll in the audit track for a workshop that offers Verified Certificates, and then complete this application. Note that you must complete a separate application for each workshop you take.\n"
+" We plan to use this information to evaluate your application for financial assistance and to further develop our financial assistance program."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Annual Household Income"
@@ -6011,6 +6007,9 @@ msgid ""
 "course does not appear in the list, make sure that you have enrolled in the "
 "audit track for the course."
 msgstr ""
+"Select the workshop for which you want to earn a verified certificate. If the "
+"workshop does not appear in the list, make sure that you have enrolled in the "
+"audit track for the workshop."
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Specify your annual household income in US Dollars."
@@ -6151,13 +6150,13 @@ msgstr ""
 
 #: lms/djangoapps/dashboard/sysadmin.py
 msgid "Added Course"
-msgstr ""
+msgstr "Added Workshop"
 
 #: lms/djangoapps/dashboard/sysadmin.py cms/templates/course-create-rerun.html
 #: cms/templates/index.html lms/templates/shoppingcart/receipt.html
 #: lms/templates/support/feature_based_enrollments.html
 msgid "Course Name"
-msgstr ""
+msgstr "Workshop Name"
 
 #: lms/djangoapps/dashboard/sysadmin.py
 msgid "Directory/ID"
@@ -6179,7 +6178,7 @@ msgstr ""
 
 #: lms/djangoapps/dashboard/sysadmin.py
 msgid "Information about all courses"
-msgstr ""
+msgstr "Information about all workshops"
 
 #: lms/djangoapps/dashboard/sysadmin.py
 msgid "Deleted"
@@ -6203,7 +6202,7 @@ msgstr ""
 
 #: lms/djangoapps/dashboard/sysadmin.py
 msgid "Enrollment information for all courses"
-msgstr ""
+msgstr "Enrollment information for all workshops"
 
 #: lms/djangoapps/dashboard/sysadmin.py
 msgid "role"
@@ -6321,19 +6320,19 @@ msgstr ""
 
 #: lms/djangoapps/email_marketing/models.py
 msgid "Sailthru send template to use on upgrading a course. Deprecated "
-msgstr ""
+msgstr "Sailthru send template to use on upgrading a workshop. Deprecated "
 
 #: lms/djangoapps/email_marketing/models.py
 msgid "Sailthru send template to use on purchasing a course seat. Deprecated "
-msgstr ""
+msgstr "Sailthru send template to use on purchasing a workshop seat. Deprecated "
 
 #: lms/djangoapps/email_marketing/models.py
 msgid "Use the Sailthru content API to fetch course tags."
-msgstr ""
+msgstr "Use the Sailthru content API to fetch workshop tags."
 
 #: lms/djangoapps/email_marketing/models.py
 msgid "Number of seconds to cache course content retrieved from Sailthru."
-msgstr ""
+msgstr "Number of seconds to cache workshop content retrieved from Sailthru."
 
 #: lms/djangoapps/email_marketing/models.py
 msgid "Cost in cents to report to Sailthru for enrolls."
@@ -6364,7 +6363,7 @@ msgstr ""
 
 #: lms/djangoapps/instructor/paidcourse_enrollment_report.py
 msgid "Course Staff"
-msgstr ""
+msgstr "Workshop Staff"
 
 #: lms/djangoapps/instructor/paidcourse_enrollment_report.py
 #: openedx/core/djangoapps/django_comment_common/models.py
@@ -6514,7 +6513,7 @@ msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "CourseID"
-msgstr ""
+msgstr "WorkshopID"
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Certificate Type"
@@ -6654,7 +6653,7 @@ msgstr ""
 #: lms/djangoapps/instructor/views/api.py
 #: openedx/core/djangoapps/schedules/admin.py
 msgid "Course Id"
-msgstr ""
+msgstr "Workshop Id"
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "% Discount"
@@ -6718,7 +6717,7 @@ msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Unable to generate redeem codes because of course misconfiguration."
-msgstr ""
+msgstr "Unable to generate redeem codes because of workshop misconfiguration."
 
 #: lms/djangoapps/instructor/views/api.py
 #, python-brace-format
@@ -6755,7 +6754,7 @@ msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Course has no entrance exam section."
-msgstr ""
+msgstr "Workshop has no entrance exam section."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "all_students and unique_student_identifier are mutually exclusive."
@@ -6771,7 +6770,7 @@ msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Course has no valid entrance exam section."
-msgstr ""
+msgstr "Workshop has no valid entrance exam section."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "All Students"
@@ -6827,6 +6826,9 @@ msgid ""
 "started. You can view the status of the generation task in the \"Pending "
 "Tasks\" section."
 msgstr ""
+"Certificate generation task for all students of this workshop has been "
+"started. You can view the status of the generation task in the \"Pending "
+"Tasks\" section."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid ""
@@ -6879,6 +6881,7 @@ msgstr ""
 msgid ""
 "{user} is not enrolled in this course. Please check your spelling and retry."
 msgstr ""
+"{user} is not enrolled in this workshop. Please check your spelling and retry."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Invalid data, generate_for must be \"new\" or \"all\"."
@@ -6931,6 +6934,9 @@ msgid ""
 "Kindly verify student username/email and the selected course are correct and"
 " try again."
 msgstr ""
+"The student {student} does not have certificate for the workshop {course}. "
+"Kindly verify student username/email and the selected workshop are correct and"
+" try again."
 
 #: lms/djangoapps/instructor/views/coupons.py
 msgid "coupon id is None"
@@ -6978,7 +6984,7 @@ msgstr ""
 #: lms/djangoapps/instructor/views/coupons.py
 #, python-brace-format
 msgid "coupon with the coupon code ({code}) already exists for this course"
-msgstr ""
+msgstr "coupon with the coupon code ({code}) already exists for this workshop"
 
 #: lms/djangoapps/instructor/views/coupons.py
 msgid "coupon id not found"
@@ -6999,6 +7005,8 @@ msgid ""
 "To gain insights into student enrollment and participation {link_start}visit"
 " {analytics_dashboard_name}, our new course analytics product{link_end}."
 msgstr ""
+"To gain insights into student enrollment and participation {link_start}visit"
+" {analytics_dashboard_name}, our new workshop analytics product{link_end}."
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 msgid "E-Commerce"
@@ -7016,20 +7024,20 @@ msgstr ""
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 msgid "Please Enter the numeric value for the course price"
-msgstr ""
+msgstr "Please Enter the numeric value for the workshop price"
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 #, python-brace-format
 msgid "CourseMode with the mode slug({mode_slug}) DoesNotExist"
-msgstr ""
+msgstr "WorkshopMode with the mode slug({mode_slug}) DoesNotExist"
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 msgid "CourseMode price updated successfully"
-msgstr ""
+msgstr "WorkshopMode price updated successfully"
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 msgid "Course Info"
-msgstr ""
+msgstr "Workshop Info"
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 #, python-brace-format
@@ -7106,6 +7114,7 @@ msgstr ""
 msgid ""
 "The enrollment code ({code}) was not found for the {course_name} course."
 msgstr ""
+"The enrollment code ({code}) was not found for the {course_name} workshop."
 
 #: lms/djangoapps/instructor/views/registration_codes.py
 msgid "This enrollment code has been canceled. It can no longer be used."
@@ -7553,7 +7562,7 @@ msgstr ""
 
 #: lms/djangoapps/lms_xblock/mixin.py
 msgid "Course Chrome"
-msgstr ""
+msgstr "Workshop Chrome"
 
 #. Translators: DO NOT translate the words in quotes here, they are
 #. specific words for the acceptable values.
@@ -7575,6 +7584,8 @@ msgid ""
 "Enter the tab that is selected in the XBlock. If not set, the Course tab is "
 "selected."
 msgstr ""
+"Enter the tab that is selected in the XBlock. If not set, the Workshop tab is "
+"selected."
 
 #: lms/djangoapps/lms_xblock/mixin.py
 msgid "LaTeX Source File Name"
@@ -7607,6 +7618,8 @@ msgid ""
 "Confirmation and Registration Codes for the following courses: "
 "{course_name_list}"
 msgstr ""
+"Confirmation and Registration Codes for the following workshops: "
+"{course_name_list}"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Trying to add a different currency into the cart"
@@ -7660,6 +7673,7 @@ msgstr "Registration for Workshop: {course_name}"
 msgid ""
 "Please visit your {link_start}dashboard{link_end} to see your new course."
 msgstr ""
+"Please visit your {link_start}dashboard{link_end} to see your new workshop."
 
 #: lms/djangoapps/shoppingcart/models.py
 #, python-brace-format
@@ -7677,13 +7691,15 @@ msgstr ""
 #: lms/djangoapps/shoppingcart/models.py
 #, python-brace-format
 msgid "{mode_name} for course {course}"
-msgstr ""
+msgstr "{mode_name} for workshop {course}"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
 "You can unenroll in the course and receive a full refund for 14 days after "
 "the course start date. "
 msgstr ""
+"You can unenroll in the workshop and receive a full refund for 14 days after "
+"the workshop start date. "
 
 #: lms/djangoapps/shoppingcart/models.py
 #, python-brace-format
@@ -7697,6 +7713,8 @@ msgid ""
 "You can unenroll in the course and receive a full refund for 2 days after "
 "the course start date. "
 msgstr ""
+"You can unenroll in the workshop and receive a full refund for 2 days after "
+"the workshop start date. "
 
 #: lms/djangoapps/shoppingcart/models.py
 #, python-brace-format
@@ -7718,7 +7736,7 @@ msgstr ""
 #: lms/djangoapps/shoppingcart/models.py
 #, python-brace-format
 msgid "Could not find a course with the ID '{course_id}'"
-msgstr ""
+msgstr "Could not find a workshop with the ID '{course_id}'"
 
 #: lms/djangoapps/shoppingcart/models.py
 #, python-brace-format
@@ -8126,20 +8144,20 @@ msgstr ""
 
 #: lms/djangoapps/shoppingcart/reports.py
 msgid "Course Announce Date"
-msgstr ""
+msgstr "Workshop Announce Date"
 
 #: lms/djangoapps/shoppingcart/reports.py cms/templates/settings.html
 #: lms/templates/instructor/instructor_dashboard_2/executive_summary.html
 msgid "Course Start Date"
-msgstr ""
+msgstr "Workshop Start Date"
 
 #: lms/djangoapps/shoppingcart/reports.py
 msgid "Course Registration Close Date"
-msgstr ""
+msgstr "Workshop Registration Close Date"
 
 #: lms/djangoapps/shoppingcart/reports.py
 msgid "Course Registration Period"
-msgstr ""
+msgstr "Workshop Registration Period"
 
 #: lms/djangoapps/shoppingcart/reports.py
 msgid "Total Enrolled"
@@ -8200,21 +8218,21 @@ msgstr ""
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid "The course you requested does not exist."
-msgstr ""
+msgstr "The workshop you requested does not exist."
 
 #: lms/djangoapps/shoppingcart/views.py
 #, python-brace-format
 msgid "The course {course_id} is already in your cart."
-msgstr ""
+msgstr "The workshop {course_id} is already in your cart."
 
 #: lms/djangoapps/shoppingcart/views.py
 #, python-brace-format
 msgid "You are already registered in course {course_id}."
-msgstr ""
+msgstr "You are already registered in workshop {course_id}."
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid "Course added to cart."
-msgstr ""
+msgstr "Workshop added to cart."
 
 #: lms/djangoapps/shoppingcart/views.py
 #, python-brace-format
@@ -8236,6 +8254,7 @@ msgstr ""
 msgid ""
 "Code '{registration_code}' is not valid for any course in the shopping cart."
 msgstr ""
+"Code '{registration_code}' is not valid for any workshop in the shopping cart."
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid ""
@@ -8350,7 +8369,7 @@ msgstr ""
 #: lms/templates/instructor/instructor_dashboard_2/edit_coupon_modal.html
 #: lms/templates/support/feature_based_enrollments.html
 msgid "Course ID"
-msgstr ""
+msgstr "Workshop ID"
 
 #: lms/djangoapps/support/views/refund.py
 msgid "User not found"
@@ -8359,12 +8378,12 @@ msgstr ""
 #: lms/djangoapps/support/views/refund.py
 #, python-brace-format
 msgid "Course {course_id} not past the refund window."
-msgstr ""
+msgstr "Workshop {course_id} not past the refund window."
 
 #: lms/djangoapps/support/views/refund.py
 #, python-brace-format
 msgid "No order found for {user} in course {course_id}"
-msgstr ""
+msgstr "No order found for {user} in workshop {course_id}"
 
 #: lms/djangoapps/support/views/refund.py
 #, python-brace-format
@@ -8388,7 +8407,7 @@ msgstr ""
 #: lms/djangoapps/teams/views.py
 #, python-brace-format
 msgid "The supplied course id {course_id} is not valid."
-msgstr ""
+msgstr "The supplied workshop id {course_id} is not valid."
 
 #: lms/djangoapps/teams/views.py
 msgid "course_id must be provided"
@@ -8423,7 +8442,7 @@ msgstr ""
 
 #: lms/djangoapps/teams/views.py
 msgid "You are already in a team in this course."
-msgstr ""
+msgstr "You are already in a team in this workshop."
 
 #: lms/djangoapps/teams/views.py
 msgid "username or team_id must be specified."
@@ -8444,17 +8463,18 @@ msgstr ""
 #: lms/djangoapps/teams/views.py
 #, python-brace-format
 msgid "The user {username} is already a member of a team in this course."
-msgstr ""
+msgstr "The user {username} is already a member of a team in this workshop."
 
 #: lms/djangoapps/teams/views.py
 #, python-brace-format
 msgid ""
 "The user {username} is not enrolled in the course associated with this team."
 msgstr ""
+"The user {username} is not enrolled in the workshop associated with this team."
 
 #: lms/djangoapps/verify_student/models.py
 msgid "The course for which this deadline applies"
-msgstr ""
+msgstr "The workshop for which this deadline applies"
 
 #: lms/djangoapps/verify_student/models.py
 msgid ""
@@ -8501,7 +8521,7 @@ msgstr ""
 
 #: lms/djangoapps/verify_student/views.py
 msgid "This course doesn't support paid certificates"
-msgstr ""
+msgstr "This workshop doesn't support paid certificates"
 
 #: lms/djangoapps/verify_student/views.py
 msgid "No selected price or selected price is below minimum."
@@ -8519,7 +8539,7 @@ msgstr ""
 
 #: lms/djangoapps/verify_student/views.py
 msgid "Invalid course key"
-msgstr ""
+msgstr "Invalid workshop key"
 
 #: lms/djangoapps/verify_student/views.py
 msgid "No profile found for user"
@@ -8619,15 +8639,15 @@ msgstr ""
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.html
 msgid "The invitation has been sent by a member of the course staff."
-msgstr ""
+msgstr "The invitation has been sent by a member of the workshop staff."
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.html
 msgid "To start accessing course materials, please visit:"
-msgstr ""
+msgstr "To start accessing workshop materials, please visit:"
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.html
 msgid "To enroll in this course and begin the beta test:"
-msgstr ""
+msgstr "To enroll in this workshop and begin the beta test:"
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.html
 #, python-format
@@ -8668,23 +8688,26 @@ msgid ""
 "You have been invited to be a beta tester for %(course_name)s at "
 "%(site_name)s by a member of the course staff."
 msgstr ""
+"You have been invited to be a beta tester for %(course_name)s at "
+"%(site_name)s by a member of the workshop staff."
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.txt
 #: lms/templates/instructor/edx_ace/enrollenrolled/email/body.txt
 #, python-format
 msgid "To start accessing course materials, please visit %(course_url)s"
-msgstr ""
+msgstr "To start accessing workshop materials, please visit %(course_url)s"
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.txt
 #, python-format
 msgid ""
 "Visit %(course_about_url)s to enroll in this course and begin the beta test."
 msgstr ""
+"Visit %(course_about_url)s to enroll in this workshop and begin the beta test."
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.txt
 #, python-format
 msgid "Visit %(site_name)s to enroll in this course and begin the beta test."
-msgstr ""
+msgstr "Visit %(site_name)s to enroll in this workshop and begin the beta test."
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/subject.txt
 #, python-format
@@ -8703,14 +8726,16 @@ msgid ""
 "You have been invited to join %(course_name)s at %(site_name)s by a member "
 "of the course staff."
 msgstr ""
+"You have been invited to join %(course_name)s at %(site_name)s by a member "
+"of the workshop staff."
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html
 msgid "To access this course click on the button below and login:"
-msgstr ""
+msgstr "To access this workshop click on the button below and login:"
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html
 msgid "To access this course visit it and register:"
-msgstr ""
+msgstr "To access this workshop visit it and register:"
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html
 #, python-format
@@ -8736,6 +8761,8 @@ msgid ""
 "Once you have registered and activated your account, you will be able to "
 "access this course:"
 msgstr ""
+"Once you have registered and activated your account, you will be able to "
+"access this workshop:"
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.txt
@@ -8750,7 +8777,7 @@ msgstr ""
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.txt
 #, python-format
 msgid "To access this course visit %(course_url)s and login."
-msgstr ""
+msgstr "To access this workshop visit %(course_url)s and login."
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.txt
 #, python-format
@@ -8758,6 +8785,8 @@ msgid ""
 "To access this course visit %(course_about_url)s and register for this "
 "course."
 msgstr ""
+"To access this workshop visit %(course_about_url)s and register for this "
+"workshop."
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.txt
 #, python-format
@@ -8773,6 +8802,8 @@ msgid ""
 "Once you have registered and activated your account, visit "
 "%(course_about_url)s to join this course."
 msgstr ""
+"Once you have registered and activated your account, visit "
+"%(course_about_url)s to join this workshop."
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/subject.txt
 #, python-format
@@ -8793,6 +8824,8 @@ msgid ""
 "You have been unenrolled from the course %(course_name)s by a member of the "
 "course staff. Please disregard the invitation previously sent."
 msgstr ""
+"You have been unenrolled from the workshop %(course_name)s by a member of the "
+"workshop staff. Please disregard the invitation previously sent."
 
 #: lms/templates/instructor/edx_ace/allowedunenroll/email/body.txt
 msgid "Dear Student,"
@@ -8814,13 +8847,16 @@ msgid ""
 "of the course staff. This course will no longer appear on your %(site_name)s"
 " dashboard."
 msgstr ""
+"You have been unenrolled from %(course_name)s at %(site_name)s by a member "
+"of the workshop staff. This workshop will no longer appear on your %(site_name)s"
+" dashboard."
 
 #: lms/templates/instructor/edx_ace/enrolledunenroll/email/body.html
 #: lms/templates/instructor/edx_ace/enrolledunenroll/email/body.txt
 #: lms/templates/instructor/edx_ace/removebetatester/email/body.html
 #: lms/templates/instructor/edx_ace/removebetatester/email/body.txt
 msgid "Your other courses have not been affected."
-msgstr ""
+msgstr "Your other workshops have not been affected."
 
 #: lms/templates/instructor/edx_ace/enrolledunenroll/email/body.html
 #: lms/templates/instructor/edx_ace/enrolledunenroll/email/body.txt
@@ -8846,10 +8882,13 @@ msgid ""
 "the course staff. This course will now appear on your %(site_name)s "
 "dashboard."
 msgstr ""
+"You have been enrolled in %(course_name)s at %(site_name)s by a member of "
+"the workshop staff. This workshop will now appear on your %(site_name)s "
+"dashboard."
 
 #: lms/templates/instructor/edx_ace/enrollenrolled/email/body.html
 msgid "Access the Course Materials Now"
-msgstr ""
+msgstr "Access the Workshop Materials Now"
 
 #: lms/templates/instructor/edx_ace/removebetatester/email/body.html
 #, python-format
@@ -8863,12 +8902,16 @@ msgid ""
 "You have been removed as a beta tester for %(course_name)s at %(site_name)s "
 "by a member of the course staff."
 msgstr ""
+"You have been removed as a beta tester for %(course_name)s at %(site_name)s "
+"by a member of the workshop staff."
 
 #: lms/templates/instructor/edx_ace/removebetatester/email/body.html
 msgid ""
 "This course will remain on your dashboard, but you will no longer be part of"
 " the beta testing group."
 msgstr ""
+"This workshop will remain on your dashboard, but you will no longer be part of"
+" the beta testing group."
 
 #: lms/templates/instructor/edx_ace/removebetatester/email/body.txt
 #, python-format
@@ -8877,6 +8920,9 @@ msgid ""
 "by a member of the course staff. This course will remain on your dashboard, "
 "but you will no longer be part of the beta testing group."
 msgstr ""
+"You have been removed as a beta tester for %(course_name)s at %(site_name)s "
+"by a member of the workshop staff. This workshop will remain on your dashboard, "
+"but you will no longer be part of the beta testing group."
 
 #: lms/templates/instructor/edx_ace/removebetatester/email/subject.txt
 #, python-format
@@ -8917,6 +8963,8 @@ msgid ""
 "These permissions will be granted for data from your courses associated with"
 " the following content providers:"
 msgstr ""
+"These permissions will be granted for data from your workshops associated with"
+" the following content providers:"
 
 #: lms/templates/oauth2_provider/authorize.html
 msgid ""
@@ -11973,12 +12021,12 @@ msgstr ""
 #: cms/templates/index.html
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course Number:"
-msgstr ""
+msgstr "Workshop Number:"
 
 #: cms/templates/index.html
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course Run:"
-msgstr ""
+msgstr "Workshop Run:"
 
 #: cms/templates/index.html lms/templates/sysadmin_dashboard.html
 #: lms/templates/sysadmin_dashboard_gitlogs.html
@@ -13054,6 +13102,9 @@ msgid ""
 "future free courses. Not ready to take a course just yet? Registering puts "
 "you on our mailing list - we will update you as courses are added."
 msgstr ""
+"Registering with {platform_name} gives you access to all of our current and "
+"future free workshops. Not ready to take a course just yet? Registering puts "
+"you on our mailing list - we will update you as workshops are added."
 
 #: lms/templates/register-sidebar.html
 #: themes/stanford-style/lms/templates/register-sidebar.html
@@ -13083,6 +13134,9 @@ msgid ""
 "After you enroll in a course, you can also find answers in the course "
 "discussions."
 msgstr ""
+"You can find the answers to most of your questions in our list of FAQs. "
+"After you enroll in a workshop, you can also find answers in the workshop "
+"discussions."
 
 #: lms/templates/register.html
 msgid "Register for {platform_name}"
@@ -13127,6 +13181,8 @@ msgid ""
 "Your secondary email has been activated. Please visit "
 "{link_start}dashboard{link_end} for courses."
 msgstr ""
+"Your secondary email has been activated. Please visit "
+"{link_start}dashboard{link_end} for workshops."
 
 #: lms/templates/seq_module.html
 msgid "Important!"
@@ -13377,7 +13433,7 @@ msgstr ""
 
 #: lms/templates/sysadmin_dashboard.html
 msgid "Administer Courses"
-msgstr ""
+msgstr "Administer Workshops"
 
 #. Translators: Repo is short for git repository or source of
 #. courseware; see http://git-scm.com/about
@@ -13400,11 +13456,11 @@ msgstr ""
 #. Translators: 'dir' is short for 'directory'
 #: lms/templates/sysadmin_dashboard.html
 msgid "Course ID or dir"
-msgstr ""
+msgstr "Workshop ID or dir"
 
 #: lms/templates/sysadmin_dashboard.html
 msgid "Delete course from site"
-msgstr ""
+msgstr "Delete workshop from site"
 
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "Page {current_page} of {total_pages}"
@@ -13436,7 +13492,7 @@ msgstr ""
 #. Translators: git is a version-control system; see http://git-scm.com/about
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "No git import logs have been recorded for this course."
-msgstr ""
+msgstr "No git import logs have been recorded for this workshop."
 
 #: lms/templates/text-me-the-app.html
 msgid "Text Me The App"
@@ -13641,6 +13697,9 @@ msgid ""
 "{link_start}our API documentation page{link_end}. For questions about using "
 "this API, contact {api_support_email_link}."
 msgstr ""
+"To learn more about the {platform_name} Workshop Catalog API, visit "
+"{link_start}our API documentation page{link_end}. For questions about using "
+"this API, contact {api_support_email_link}."
 
 #: lms/templates/api_admin/terms_of_service.html
 msgid "API Terms of Service"
@@ -13681,6 +13740,30 @@ msgid ""
 " you do not understand or do not wish to be bound by the Terms, you should "
 "not use the APIs."
 msgstr ""
+"Welcome to {platform_name}. Thank you for using {platform_name}'s Workshop "
+"Discovery API, Enterprise API and/or any additional APIs that we may offer "
+"from time to time (collectively, the \"APIs\"). Please read these Terms of "
+"Service prior to accessing or using the APIs. These Terms of Service, any "
+"additional terms within accompanying API documentation, and any applicable "
+"policies and guidelines that {platform_name} makes available and/or updates "
+"from time to time are agreements (collectively, the \"Terms\") between you "
+"and {platform_name}. These Terms are issued under the enterprise product "
+"agreement, member participation agreement, or other direct agreement "
+"governing the purchase of {platform_name} products, if any (the "
+"\"Agreement\"), executed by you or the party on whose behalf you are "
+"accessing or using the APIs and {platform_name}.  In the event that you have"
+" such an Agreement that applies to your use of the APIs, the Agreement will "
+"control in the event of any conflict between it and these Terms. By "
+"accessing or using the APIs, you accept and agree to be legally bound by the"
+" Terms, whether or not you are a registered user. If you are accessing or "
+"using the APIs on behalf of a company, organization or other legal entity, "
+"you are agreeing to these Terms for that entity and representing and "
+"warranting to {platform_name} that you have full authority to accept and "
+"agree to these Terms for such entity, in which case the terms \"you,\" "
+"\"your\" or related terms herein shall refer to such entity on whose behalf "
+"you are accessing or using the APIs. If you do not have such authority or if"
+" you do not understand or do not wish to be bound by the Terms, you should "
+"not use the APIs."
 
 #: lms/templates/api_admin/terms_of_service.html
 msgid "API Access"
@@ -13854,6 +13937,20 @@ msgid ""
 "other entities providing information, API Content or services for the APIs, "
 "the course instructors and their staffs."
 msgstr ""
+"All names, logos and seals (\"Trademarks\") that appear in the APIs, API "
+"Content, or on or through the services made available on or through the "
+"APIs, if any, are the property of their respective owners. You may not "
+"remove, alter, or obscure any copyright, Trademark, or other proprietary "
+"rights notices incorporated in or accompanying the API Content. If any "
+"{platform_name} Participant (as hereinafter defined) or other third party "
+"revokes access to API Content owned or controlled by that {platform_name} "
+"Participant or third party, including without limitation any Trademarks, you"
+" must ensure that all API Content pertaining to that {platform_name} "
+"Participant or third party is deleted from Your Application and your "
+"networks, systems and servers as soon as reasonably possible. "
+"\"{platform_name_capitalized} Participants\" means MIT, Harvard, and the "
+"other entities providing information, API Content or services for the APIs, "
+"the workshop instructors and their staffs."
 
 #: lms/templates/api_admin/terms_of_service.html
 msgid ""
@@ -14326,7 +14423,7 @@ msgstr ""
 
 #: lms/templates/ccx/coach_dashboard.html
 msgid "Create a new Custom Course for edX"
-msgstr ""
+msgstr "Create a new Custom Workshop for edX"
 
 #: lms/templates/ccx/coach_dashboard.html
 #: lms/templates/ccx/grading_policy.html
@@ -14428,6 +14525,9 @@ msgid ""
 " failing to display. This form does not check the validity of the policy "
 "before saving."
 msgstr ""
+"For advanced users only. Errors in the grading policy can lead to the workshop"
+" failing to display. This form does not check the validity of the policy "
+"before saving."
 
 #: lms/templates/ccx/grading_policy.html
 msgid "Most coaches should not need to make changes to the grading policy."
@@ -14612,11 +14712,11 @@ msgstr ""
 
 #: lms/templates/certificates/server-error.html
 msgid "The institution that is linked to the course."
-msgstr ""
+msgstr "The institution that is linked to the workshop."
 
 #: lms/templates/certificates/server-error.html
 msgid "The course information in the Course Administration tool."
-msgstr ""
+msgstr "The workshop information in the Workshop Administration tool."
 
 #: lms/templates/certificates/server-error.html
 msgid ""
@@ -14711,6 +14811,8 @@ msgid ""
 "{b_start}Eligible for credit:{b_end} Receive academic credit after "
 "successfully completing the course"
 msgstr ""
+"{b_start}Eligible for credit:{b_end} Receive academic credit after "
+"successfully completing the workshop"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14718,6 +14820,8 @@ msgid ""
 "{b_start}Unlimited Course Access: {b_end}Learn at your own pace, and access "
 "materials anytime to brush up on what you've learned."
 msgstr ""
+"{b_start}Unlimited Workshop Access: {b_end}Learn at your own pace, and access "
+"materials anytime to brush up on what you've learned."
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14780,11 +14884,13 @@ msgid ""
 "{b_start}Motivating: {b_end}Give yourself an additional incentive to "
 "complete the course"
 msgstr ""
+"{b_start}Motivating: {b_end}Give yourself an additional incentive to "
+"complete the workshop"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
 msgid "Audit This Course"
-msgstr ""
+msgstr "Audit This Workshop"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14792,11 +14898,13 @@ msgid ""
 "Audit this course for free and have complete access to all the course "
 "material, activities, tests, and forums."
 msgstr ""
+"Audit this workshop for free and have complete access to all the workshop "
+"material, activities, tests, and forums."
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
 msgid "Audit This Course (No Certificate)"
-msgstr ""
+msgstr "Audit This Workshop (No Certificate)"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14805,6 +14913,9 @@ msgid ""
 "discussions forums. {b_start}This track does not include graded assignments,"
 " or unlimited course access.{b_end}"
 msgstr ""
+"Audit this workshop for free and have access to workshop materials and "
+"discussions forums. {b_start}This track does not include graded assignments,"
+" or unlimited workshop access.{b_end}"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14813,6 +14924,9 @@ msgid ""
 "discussions forums. {b_start}This track does not include graded "
 "assignments.{b_end}"
 msgstr ""
+"Audit this workshop for free and have access to workshop materials and "
+"discussions forums. {b_start}This track does not include graded "
+"assignments.{b_end}"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14821,6 +14935,9 @@ msgid ""
 "discussions forums. {b_start}This track does not include unlimited course "
 "access.{b_end}"
 msgstr ""
+"Audit this workshop for free and have access to workshop materials and "
+"discussions forums. {b_start}This track does not include unlimited workshop "
+"access.{b_end}"
 
 #: lms/templates/course_modes/choose.html
 #: themes/edx.org/lms/templates/course_modes/choose.html
@@ -14830,6 +14947,10 @@ msgid ""
 "track does not offer a certificate for learners who earn a passing "
 "grade.{b_end}"
 msgstr ""
+"Audit this workshop for free and have complete access to all the workshop "
+"material, activities, tests, and forums.  {b_start}Please note that this "
+"track does not offer a certificate for learners who earn a passing "
+"grade.{b_end}"
 
 #: lms/templates/courseware/accordion.html
 msgid "{chapter} current chapter"
@@ -14864,25 +14985,25 @@ msgstr ""
 
 #: lms/templates/courseware/course_about.html
 msgid "You are enrolled in this course"
-msgstr ""
+msgstr "You are enrolled in this workshop"
 
 #: lms/templates/courseware/course_about.html
 #: lms/templates/dashboard/_dashboard_course_listing.html
 #: lms/templates/shoppingcart/registration_code_receipt.html
 msgid "View Course"
-msgstr ""
+msgstr "View Workshop"
 
 #: lms/templates/courseware/course_about.html
 msgid "This course is in your {start_cart_link}cart{end_cart_link}."
-msgstr ""
+msgstr "This workshop is in your {start_cart_link}cart{end_cart_link}."
 
 #: lms/templates/courseware/course_about.html
 msgid "Course is full"
-msgstr ""
+msgstr "Workshop is full"
 
 #: lms/templates/courseware/course_about.html
 msgid "Enrollment in this course is by invitation only"
-msgstr ""
+msgstr "Enrollment in this workshop is by invitation only"
 
 #: lms/templates/courseware/course_about.html
 msgid "Enrollment is Closed"
@@ -14922,6 +15043,8 @@ msgid ""
 "You must successfully complete {link_start}{prc_display}{link_end} before "
 "you begin this course."
 msgstr ""
+"You must successfully complete {link_start}{prc_display}{link_end} before "
+"you begin this workshop."
 
 #: lms/templates/courseware/course_about.html
 msgid "Additional Resources"
@@ -14947,21 +15070,21 @@ msgstr ""
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 msgid "Take a course with {platform} online"
-msgstr ""
+msgstr "Take a workshop with {platform} online"
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 #: themes/stanford-style/lms/templates/courseware/course_about_sidebar_header.html
 msgid "Tweet that you've enrolled in this course"
-msgstr ""
+msgstr "Tweet that you've enrolled in this workshop"
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 msgid "Post a Facebook message to say you've enrolled in this course"
-msgstr ""
+msgstr "Post a Facebook message to say you've enrolled in this workshop"
 
 #: lms/templates/courseware/course_about_sidebar_header.html
 #: themes/stanford-style/lms/templates/courseware/course_about_sidebar_header.html
 msgid "Email someone to say you've enrolled in this course"
-msgstr ""
+msgstr "Email someone to say you've enrolled in this workshop"
 
 #: lms/templates/courseware/course_navigation.html
 msgid "current location"
@@ -14976,7 +15099,7 @@ msgstr ""
 
 #: lms/templates/courseware/course_navigation.html
 msgid "Course Material"
-msgstr ""
+msgstr "Workshop Material"
 
 #: lms/templates/courseware/course_updates.html
 msgid "Hide"
@@ -14988,11 +15111,11 @@ msgstr ""
 
 #: lms/templates/courseware/course_updates.html
 msgid "Show Earlier Course Updates"
-msgstr ""
+msgstr "Show Earlier Workshop Updates"
 
 #: lms/templates/courseware/courses.html
 msgid "List of Courses"
-msgstr ""
+msgstr "List of Workshops"
 
 #: lms/templates/courseware/courses.html
 msgid "Refine Your Search"
@@ -15007,7 +15130,7 @@ msgstr ""
 #: lms/templates/courseware/courseware-chromeless.html
 #: lms/templates/courseware/courseware.html
 msgid "Course Utilities"
-msgstr ""
+msgstr "Workshop Utilities"
 
 #: lms/templates/courseware/courseware-error.html
 msgid "Courseware"
@@ -15015,11 +15138,11 @@ msgstr ""
 
 #: lms/templates/courseware/courseware.html
 msgid "Course Search"
-msgstr ""
+msgstr "Workshop Search"
 
 #: lms/templates/courseware/courseware.html
 msgid "No content has been added to this course"
-msgstr ""
+msgstr "No content has been added to this workshop"
 
 #: lms/templates/courseware/courseware.html
 #, python-format
@@ -15027,6 +15150,8 @@ msgid ""
 "To access course materials, you must score {required_score}% or higher on "
 "this                     exam. Your current score is {current_score}%."
 msgstr ""
+"To access workshop materials, you must score {required_score}% or higher on "
+"this                     exam. Your current score is {current_score}%."
 
 #: lms/templates/courseware/courseware.html
 msgid "Your score is {current_score}%. You have passed the entrance exam."
@@ -15061,7 +15186,7 @@ msgstr ""
 
 #: lms/templates/courseware/info.html
 msgid "{course_number} Course Info"
-msgstr ""
+msgstr "{course_number} Workshop Info"
 
 #: lms/templates/courseware/info.html
 msgid "You are not enrolled yet"
@@ -15072,6 +15197,8 @@ msgid ""
 "You are not currently enrolled in this course. {link_start}Enroll "
 "now!{link_end}"
 msgstr ""
+"You are not currently enrolled in this workshop. {link_start}Enroll "
+"now!{link_end}"
 
 #: lms/templates/courseware/info.html
 msgid "Welcome to {org}'s {course_title}!"
@@ -15085,7 +15212,7 @@ msgstr ""
 #: lms/templates/dashboard/_dashboard_course_listing.html
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Resume Course"
-msgstr ""
+msgstr "Resume Workshop"
 
 #: lms/templates/courseware/info.html
 msgid "View Updates in Studio"
@@ -15093,7 +15220,7 @@ msgstr ""
 
 #: lms/templates/courseware/info.html
 msgid "Course Updates and News"
-msgstr ""
+msgstr "Workshop Updates and News"
 
 #: lms/templates/courseware/info.html
 msgid "Handout Navigation"
@@ -15102,7 +15229,7 @@ msgstr ""
 #: lms/templates/courseware/info.html
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Course Tools"
-msgstr ""
+msgstr "Workshop Tools"
 
 #: lms/templates/courseware/news.html
 msgid "News - MITx 6.002x"
@@ -15152,7 +15279,7 @@ msgstr ""
 #: lms/templates/shoppingcart/billing_details.html
 #: lms/templates/shoppingcart/shopping_cart.html
 msgid "View Courses"
-msgstr ""
+msgstr "View Workshops"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "Meet the Instructors"
@@ -15180,7 +15307,7 @@ msgstr ""
 
 #: lms/templates/courseware/program_marketing.html
 msgid "{weeks_to_complete} weeks per course"
-msgstr ""
+msgstr "{weeks_to_complete} weeks per workshop"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "Effort"
@@ -15191,14 +15318,16 @@ msgid ""
 "{min_hours_effort_per_week}-{max_hours_effort_per_week} hours per week, per "
 "course"
 msgstr ""
+"{min_hours_effort_per_week}-{max_hours_effort_per_week} hours per week, per "
+"workshop"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "Number of Courses"
-msgstr ""
+msgstr "Number of Workshops"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "{number_of_courses} courses in program"
-msgstr ""
+msgstr "{number_of_courses} workshops in program"
 
 #: lms/templates/courseware/program_marketing.html
 msgid "Price (USD)"
@@ -15234,7 +15363,7 @@ msgstr ""
 
 #: lms/templates/courseware/progress.html
 msgid "Course Progress for '{username}' ({email})"
-msgstr ""
+msgstr "Workshop Progress for '{username}' ({email})"
 
 #: lms/templates/courseware/progress.html
 msgid "View Certificate"
@@ -15254,17 +15383,19 @@ msgstr ""
 
 #: lms/templates/courseware/progress.html
 msgid "Requirements for Course Credit"
-msgstr ""
+msgstr "Requirements for Workshop Credit"
 
 #: lms/templates/courseware/progress.html
 msgid "{student_name}, you are no longer eligible for credit in this course."
-msgstr ""
+msgstr "{student_name}, you are no longer eligible for credit in this workshop."
 
 #: lms/templates/courseware/progress.html
 msgid ""
 "{student_name}, you have met the requirements for credit in this course. "
 "{a_start}Go to your dashboard{a_end} to purchase course credit."
 msgstr ""
+"{student_name}, you have met the requirements for credit in this workshop. "
+"{a_start}Go to your dashboard{a_end} to purchase workshop credit."
 
 #: lms/templates/courseware/progress.html
 msgid "{student_name}, you have not yet met the requirements for credit."
@@ -15272,7 +15403,7 @@ msgstr ""
 
 #: lms/templates/courseware/progress.html
 msgid "Information about course credit requirements"
-msgstr ""
+msgstr "Information about workshop credit requirements"
 
 #: lms/templates/courseware/progress.html
 msgid "display_name"
@@ -15349,7 +15480,7 @@ msgstr ""
 
 #: lms/templates/courseware/syllabus.html
 msgid "{course.display_number_with_default} Course Info"
-msgstr ""
+msgstr "{course.display_number_with_default} Workshop Info"
 
 #: lms/templates/courseware/welcome-back.html
 msgid ""
@@ -15373,6 +15504,9 @@ msgid ""
 "{providers} for successfully completing your {platform_name} course! "
 "{link_start}Purchase credit now.{link_end}"
 msgstr ""
+"Congratulations! You are now eligible to receive workshop credit from "
+"{providers} for successfully completing your {platform_name} workshop! "
+"{link_start}Purchase credit now.{link_end}"
 
 #: lms/templates/credit_notifications/credit_eligibility_email.html
 msgid ""
@@ -15380,6 +15514,9 @@ msgid ""
 "successfully completing your {platform_name} course! {link_start}Purchase "
 "credit now.{link_end}"
 msgstr ""
+"Congratulations! You are now eligible to receive workshop credit for "
+"successfully completing your {platform_name} workshop! {link_start}Purchase "
+"credit now.{link_end}"
 
 #: lms/templates/credit_notifications/credit_eligibility_email.html
 msgid ""
@@ -15387,10 +15524,13 @@ msgid ""
 "finish a degree already started, or fulfill requirements at a different "
 "academic institution."
 msgstr ""
+"Workshop credit can help you get a jump start on your university degree, "
+"finish a degree already started, or fulfill requirements at a different "
+"academic institution."
 
 #: lms/templates/credit_notifications/credit_eligibility_email.html
 msgid "There are 2 steps to getting course credit."
-msgstr ""
+msgstr "There are 2 steps to getting workshop credit."
 
 #: lms/templates/credit_notifications/credit_eligibility_email.html
 msgid ""
@@ -15398,6 +15538,9 @@ msgid ""
 "dashboard{link_end} and clicking the {bold_start}Get Credit{bold_end} button"
 " below the course title."
 msgstr ""
+"Purchase credit by going to your {link_start}{platform_name} "
+"dashboard{link_end} and clicking the {bold_start}Get Credit{bold_end} button"
+" below the workshop title."
 
 #: lms/templates/credit_notifications/credit_eligibility_email.html
 msgid ""
@@ -15406,12 +15549,18 @@ msgid ""
 "request an official academic transcript at the institution that granted the "
 "credit."
 msgstr ""
+"When your payment is complete, return to the dashboard and click the "
+"{bold_start}Request Credit{bold_end} button under the workshop title to "
+"request an official academic transcript at the institution that granted the "
+"credit."
 
 #: lms/templates/credit_notifications/credit_eligibility_email.html
 msgid ""
 "We hope you enjoyed the course, and we hope to see you in future "
 "{platform_name} courses!"
 msgstr ""
+"We hope you enjoyed the workshop, and we hope to see you in future "
+"{platform_name} workshops!"
 
 #: lms/templates/credit_notifications/credit_eligibility_email.html
 #: lms/templates/emails/activation_email.txt
@@ -15439,7 +15588,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Grade required to pass this course:"
-msgstr ""
+msgstr "Grade required to pass this workshop:"
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid ""
@@ -15506,7 +15655,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Complete our course feedback survey"
-msgstr ""
+msgstr "Complete our workshop feedback survey"
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Add Certificate to LinkedIn Profile"
@@ -15525,7 +15674,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Course details"
-msgstr ""
+msgstr "Workshop details"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "{course_number} {course_name} Home Page"
@@ -15561,11 +15710,11 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "You must select a session by {expiration_date} to access the course."
-msgstr ""
+msgstr "You must select a session by {expiration_date} to access the workshop."
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "You must select a session to access the course."
-msgstr ""
+msgstr "You must select a session to access the workshop."
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Change or Leave Session"
@@ -15581,7 +15730,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "View Archived Course"
-msgstr ""
+msgstr "View Archived Workshop"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "I'm taking {course_name} online with {facebook_brand}. Check it out!"
@@ -15606,7 +15755,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Course options for"
-msgstr ""
+msgstr "Workshop options for"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 #: lms/templates/dashboard/_dashboard_entitlement_actions.html
@@ -15628,6 +15777,9 @@ msgid ""
 "received. You can contact the account holder to request payment, or you can "
 "unenroll from this course"
 msgstr ""
+"You can no longer access this workshop because payment has not yet been "
+"received. You can contact the account holder to request payment, or you can "
+"unenroll from this workshop"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid ""
@@ -15636,6 +15788,10 @@ msgid ""
 "holder{contact_link_end} to request payment, or you can "
 "{unenroll_link_start}unenroll{unenroll_link_end} from this course"
 msgstr ""
+"You can no longer access this workshop because payment has not yet been "
+"received. You can {contact_link_start}contact the account "
+"holder{contact_link_end} to request payment, or you can "
+"{unenroll_link_start}unenroll{unenroll_link_end} from this workshop"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Verification not yet complete."
@@ -15644,8 +15800,8 @@ msgstr ""
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "You only have {days} day left to verify for this course."
 msgid_plural "You only have {days} days left to verify for this course."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "You only have {days} day left to verify for this workshop."
+msgstr[1] "You only have {days} days left to verify for this workshop."
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Almost there!"
@@ -15653,7 +15809,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "You still need to verify for this course."
-msgstr ""
+msgstr "You still need to verify for this workshop."
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Verify Now"
@@ -15705,6 +15861,8 @@ msgid ""
 "Pursue a {cert_name_long} to highlight the knowledge and skills you gain in "
 "this course."
 msgstr ""
+"Pursue a {cert_name_long} to highlight the knowledge and skills you gain in "
+"this workshop."
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid ""
@@ -15712,6 +15870,9 @@ msgid ""
 "the course. {line_break}{link_start}Learn more about the verified "
 "{cert_name_long}{link_end}."
 msgstr ""
+"It's official. It's easily shareable. It's a proven motivator to complete "
+"the workshop. {line_break}{link_start}Learn more about the verified "
+"{cert_name_long}{link_end}."
 
 #. Translators: provider_name is the name of a credit provider or university
 #. (e.g. State University)
@@ -15720,6 +15881,8 @@ msgid ""
 "You have completed this course and are eligible to purchase course credit. "
 "Select {strong_start}Get Credit{strong_end} to get started."
 msgstr ""
+"You have completed this workshop and are eligible to purchase workshop credit. "
+"Select {strong_start}Get Credit{strong_end} to get started."
 
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid "You are now eligible for credit from {provider}. Congratulations!"
@@ -15738,6 +15901,9 @@ msgid ""
 "credit at the {link_to_provider_site} website. Select {start_bold}Request "
 "Credit{end_bold} to get started."
 msgstr ""
+"Thank you for your payment. To receive workshop credit, you must now request "
+"credit at the {link_to_provider_site} website. Select {start_bold}Request "
+"Credit{end_bold} to get started."
 
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid "Request Credit"
@@ -15748,6 +15914,8 @@ msgid ""
 "{provider_name} has received your course credit request. We will update you "
 "when credit processing is complete."
 msgstr ""
+"{provider_name} has received your workshop credit request. We will update you "
+"when credit processing is complete."
 
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid "View Details"
@@ -15763,6 +15931,9 @@ msgid ""
 "request for course credit. To see your course credit, visit the "
 "{link_to_provider_site} website."
 msgstr ""
+"{start_bold}Congratulations!{end_bold} {provider_name} has approved your "
+"request for workshop credit. To see your workshop credit, visit the "
+"{link_to_provider_site} website."
 
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid "View Credit"
@@ -15773,6 +15944,8 @@ msgid ""
 "{provider_name} did not approve your request for course credit. For more "
 "information, contact {link_to_provider_site} directly."
 msgstr ""
+"{provider_name} did not approve your request for workshop credit. For more "
+"information, contact {link_to_provider_site} directly."
 
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid ""
@@ -15781,7 +15954,7 @@ msgstr ""
 
 #: lms/templates/dashboard/_dashboard_entitlement_actions.html
 msgid "Course options for {courseName}"
-msgstr ""
+msgstr "Workshop options for {courseName}"
 
 #: lms/templates/dashboard/_dashboard_show_consent.html
 msgid "Consent to share your data"
@@ -15792,6 +15965,8 @@ msgid ""
 "To access this course, you must first consent to share your learning "
 "achievements with {enterprise_customer_name}."
 msgstr ""
+"To access this workshop, you must first consent to share your learning "
+"achievements with {enterprise_customer_name}."
 
 #: lms/templates/dashboard/_dashboard_show_consent.html
 msgid "View Consent"
@@ -15827,6 +16002,9 @@ msgid ""
 "certificate, you must submit a new photo of yourself and your government-"
 "issued photo ID before the verification deadline for your course."
 msgstr ""
+"Your verification submission was not accepted. To receive a verified "
+"certificate, you must submit a new photo of yourself and your government-"
+"issued photo ID before the verification deadline for your workshop."
 
 #: lms/templates/dashboard/_dashboard_status_verification.html
 msgid "Your verification was denied for the following reasons:"
@@ -15846,6 +16024,9 @@ msgid ""
 "submit a new photo of yourself and your government-issued photo ID before "
 "the verification deadline for your course."
 msgstr ""
+"Your verification has expired. To receive a verified certificate, you must "
+"submit a new photo of yourself and your government-issued photo ID before "
+"the verification deadline for your workshop."
 
 #: lms/templates/dashboard/_dashboard_third_party_error.html
 msgid "Could Not Link Accounts"
@@ -15876,15 +16057,15 @@ msgstr ""
 
 #: lms/templates/dashboard/_entitlement_reason_survey.html
 msgid "I was not satisfied with my experience taking the courses"
-msgstr ""
+msgstr "I was not satisfied with my experience taking the workshops"
 
 #: lms/templates/dashboard/_entitlement_reason_survey.html
 msgid "Content of the courses was too difficult"
-msgstr ""
+msgstr "Content of the workshops was too difficult"
 
 #: lms/templates/dashboard/_entitlement_reason_survey.html
 msgid "I did not have enough time to complete the courses"
-msgstr ""
+msgstr "I did not have enough time to complete the workshops"
 
 #: lms/templates/dashboard/_entitlement_reason_survey.html
 msgid "The content was not available when I wanted to start"
@@ -15912,7 +16093,7 @@ msgstr ""
 #: lms/templates/dashboard/_entitlement_reason_survey.html
 #: lms/templates/dashboard/_reason_survey.html
 msgid "Browse Courses"
-msgstr ""
+msgstr "Browse Workshops"
 
 #: lms/templates/dashboard/_reason_survey.html
 msgid ""
@@ -15945,11 +16126,11 @@ msgstr ""
 
 #: lms/templates/dashboard/_reason_survey.html
 msgid "The course material was too hard"
-msgstr ""
+msgstr "The workshop material was too hard"
 
 #: lms/templates/dashboard/_reason_survey.html
 msgid "The course material was too easy"
-msgstr ""
+msgstr "The workshop material was too easy"
 
 #: lms/templates/dashboard/_reason_survey.html
 msgid "Something was broken"
@@ -16061,7 +16242,7 @@ msgstr ""
 
 #: lms/templates/edxnotes/edxnotes.html
 msgid "Highlights and notes you've made in course content"
-msgstr ""
+msgstr "Highlights and notes you've made in workshop content"
 
 #: lms/templates/edxnotes/edxnotes.html
 msgid "Search notes for:"
@@ -16080,6 +16261,8 @@ msgid ""
 "You have not made any notes in this course yet. Other students in this "
 "course are using notes to:"
 msgstr ""
+"You have not made any notes in this workshop yet. Other students in this "
+"workshop are using notes to:"
 
 #: lms/templates/edxnotes/edxnotes.html
 msgid "Mark a passage or concept so that it's easy to find later."
@@ -16094,6 +16277,8 @@ msgid ""
 "Highlight important information to review later in the course or in future "
 "courses."
 msgstr ""
+"Highlight important information to review later in the workshop or in future "
+"workshops."
 
 #: lms/templates/edxnotes/edxnotes.html
 msgid ""
@@ -16115,6 +16300,9 @@ msgid ""
 "engaging, high-quality {platform_name} courses. Note that you will not be "
 "able to log back into your account until you have activated it."
 msgstr ""
+"You're almost there! Use the link to activate your account to access "
+"engaging, high-quality {platform_name} workshops. Note that you will not be "
+"able to log back into your account until you have activated it."
 
 #: lms/templates/emails/activation_email.txt
 msgid "Enjoy learning with {platform_name}."
@@ -16276,11 +16464,14 @@ msgid ""
 "(4) You should be able to click on 'view course' button or see your course "
 "on your student dashboard at {url}"
 msgstr ""
+"(4) You should be able to click on 'view workshop' button or see your workshop "
+"on your student dashboard at {url}"
 
 #: lms/templates/emails/business_order_confirmation_email.txt
 msgid ""
 "(5) Course materials will not be available until the course start date."
 msgstr ""
+"(5) Workshop materials will not be available until the workshop start date."
 
 #. Translators: please translate the text inside [[ ]]. This is meant as a
 #. template for course teams to use. Please also keep the <p> and </p> HTML
@@ -16404,6 +16595,8 @@ msgid ""
 "We have provided a course enrollment code for you in {course_name}. To "
 "enroll in the course, click the following link:"
 msgstr ""
+"We have provided a workshop enrollment code for you in {course_name}. To "
+"enroll in the workshop, click the following link:"
 
 #: lms/templates/emails/registration_codes_sale_email.txt
 msgid "HTML link from the attached CSV file"
@@ -16414,6 +16607,8 @@ msgid ""
 "After you enroll, you can see the course on your student dashboard. You can "
 "see course materials after the course start date."
 msgstr ""
+"After you enroll, you can see the workshop on your student dashboard. You can "
+"see workshop materials after the workshop start date."
 
 #. Translators: please translate the text inside [[ ]]. This is meant as a
 #. template for course teams to use.
@@ -16483,6 +16678,10 @@ msgid ""
 "All purchases are final. For more information, see the {site_name} "
 "cancellation policy."
 msgstr ""
+"If we do not receive payment, the learner enrollments that use these codes "
+"will be canceled and learners will not be able to access workshop materials. "
+"All purchases are final. For more information, see the {site_name} "
+"cancellation policy."
 
 #: lms/templates/emails/registration_codes_sale_invoice_attachment.txt
 msgid "For payment questions, contact {contact_email}"
@@ -16494,12 +16693,17 @@ msgid ""
 "name from {old_name} to {new_name}. If you need further assistance, please "
 "e-mail the course staff at {email}."
 msgstr ""
+"We are sorry. Our workshop staff did not approve your request to change your "
+"name from {old_name} to {new_name}. If you need further assistance, please "
+"e-mail the workshop staff at {email}."
 
 #: lms/templates/emails/reverification_processed.txt
 msgid ""
 "We have successfully verified your identity for the {assessment} assessment "
 "in the {course_name} course."
 msgstr ""
+"We have successfully verified your identity for the {assessment} assessment "
+"in the {course_name} workshop."
 
 #: lms/templates/emails/reverification_processed.txt
 msgid ""
@@ -16507,6 +16711,9 @@ msgid ""
 "{course_name} course. You have used {used_attempts} out of "
 "{allowed_attempts} attempts to verify your identity."
 msgstr ""
+"We could not verify your identity for the {assessment} assessment in the "
+"{course_name} workshop. You have used {used_attempts} out of "
+"{allowed_attempts} attempts to verify your identity."
 
 #: lms/templates/emails/reverification_processed.txt
 msgid ""
@@ -16524,6 +16731,10 @@ msgid ""
 "{allowed_attempts} attempts to verify your identity, and verification is no "
 "longer possible."
 msgstr ""
+"We could not verify your identity for the {assessment} assessment in the "
+"{course_name} workshop. You have used {used_attempts} out of "
+"{allowed_attempts} attempts to verify your identity, and verification is no "
+"longer possible."
 
 #: lms/templates/emails/reverification_processed.txt
 msgid "To go to the courseware, select the following link:"
@@ -16546,19 +16757,23 @@ msgstr ""
 #: themes/stanford-style/lms/templates/embargo/default_enrollment.html
 #: themes/stanford-style/lms/templates/static_templates/embargo.html
 msgid "This Course Unavailable In Your Country"
-msgstr ""
+msgstr "This Workshop Unavailable In Your Country"
 
 #: lms/templates/embargo/default_courseware.html
 msgid ""
 "Our system indicates that you are trying to access this {platform_name} "
 "course from a country or region in which it is not currently available."
 msgstr ""
+"Our system indicates that you are trying to access this {platform_name} "
+"workshop from a country or region in which it is not currently available."
 
 #: lms/templates/embargo/default_enrollment.html
 msgid ""
 "Our system indicates that you are trying to enroll in this {platform_name} "
 "course from a country or region in which it is not currently available."
 msgstr ""
+"Our system indicates that you are trying to enroll in this {platform_name} "
+"workshop from a country or region in which it is not currently available."
 
 #: lms/templates/enrollment/course_enrollment_message.html
 msgid "Enrollment Successful"
@@ -16568,6 +16783,7 @@ msgstr ""
 msgid ""
 "Thank you for enrolling in {course_names}. We hope you enjoy the course."
 msgstr ""
+"Thank you for enrolling in {course_names}. We hope you enjoy the workshop."
 
 #: lms/templates/enrollment/course_enrollment_message.html
 msgid "Thank you for enrolling in:"
@@ -16575,7 +16791,7 @@ msgstr ""
 
 #: lms/templates/enrollment/course_enrollment_message.html
 msgid "We hope you enjoy the course."
-msgstr ""
+msgstr "We hope you enjoy the workshop."
 
 #: lms/templates/enrollment/course_enrollment_message.html
 msgid ""
@@ -16606,6 +16822,9 @@ msgid ""
 "financial circumstances a chance to earn a Verified Certificate upon "
 "successful completion of an edX course."
 msgstr ""
+"EdX Financial Assistance is a program we created to give learners in all "
+"financial circumstances a chance to earn a Verified Certificate upon "
+"successful completion of an edX workshop."
 
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid ""
@@ -16628,6 +16847,9 @@ msgid ""
 "your identity on edx.org so you can start working toward completing your edX"
 " course."
 msgstr ""
+"If your application is approved, we'll give you instructions for verifying "
+"your identity on edx.org so you can start working toward completing your edX"
+" workshop."
 
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid ""
@@ -16635,6 +16857,9 @@ msgid ""
 "from leading institutions regardless of your financial situation, earn a "
 "Verified Certificate, and share your success with others."
 msgstr ""
+"EdX is committed to making it possible for you to take high quality workshops "
+"from leading institutions regardless of your financial situation, earn a "
+"Verified Certificate, and share your success with others."
 
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid "Sincerely, Anant"
@@ -16710,7 +16935,7 @@ msgstr ""
 
 #: lms/templates/header/user_dropdown.html
 msgid "Resume your last course"
-msgstr ""
+msgstr "Resume your last workshop"
 
 #: lms/templates/header/user_dropdown.html
 msgid "Profile"
@@ -16739,7 +16964,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid "Generate example certificates for the course."
-msgstr ""
+msgstr "Generate example certificates for the workshop."
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid "Generate Example Certificates"
@@ -16792,6 +17017,8 @@ msgid ""
 "Course certificate generation requires an activated web certificate "
 "configuration."
 msgstr ""
+"Workshop certificate generation requires an activated web certificate "
+"configuration."
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid ""
@@ -16799,6 +17026,9 @@ msgid ""
 "Certificates. You do not need to do this if you have set the certificate "
 "mode to on-demand generation."
 msgstr ""
+"When you are ready to generate certificates for your workshop, click Generate "
+"Certificates. You do not need to do this if you have set the certificate "
+"mode to on-demand generation."
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
@@ -16826,6 +17056,8 @@ msgid ""
 "To regenerate certificates for your course, choose the learners who will "
 "receive regenerated certificates and click Regenerate Certificates."
 msgstr ""
+"To regenerate certificates for your workshop, choose the learners who will "
+"receive regenerated certificates and click Regenerate Certificates."
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid "Choose learner types for regeneration"
@@ -16871,6 +17103,10 @@ msgid ""
 "you add learners to the exception list, click Generate Exception "
 "Certificates below."
 msgstr ""
+"Set exceptions to generate certificates for learners who did not qualify for"
+" a certificate but have been given an exception by the workshop team. After "
+"you add learners to the exception list, click Generate Exception "
+"Certificates below."
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid "Invalidate Certificates"
@@ -16898,19 +17134,19 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Basic Course Information"
-msgstr ""
+msgstr "Basic Workshop Information"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course Name:"
-msgstr ""
+msgstr "Workshop Name:"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course Start Date:"
-msgstr ""
+msgstr "Workshop Start Date:"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course End Date:"
-msgstr ""
+msgstr "Workshop End Date:"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "No end date set"
@@ -16918,7 +17154,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Has the course started?"
-msgstr ""
+msgstr "Has the workshop started?"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Yes"
@@ -16930,7 +17166,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Has the course ended?"
-msgstr ""
+msgstr "Has the workshop ended?"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Number of sections:"
@@ -16946,10 +17182,12 @@ msgid ""
 "View detailed Git import logs for this course {link_start}by clicking "
 "here{link_end}."
 msgstr ""
+"View detailed Git import logs for this workshop {link_start}by clicking "
+"here{link_end}."
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Course Warnings"
-msgstr ""
+msgstr "Workshop Warnings"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid ""
@@ -16958,6 +17196,10 @@ msgid ""
 "exams and problem sets), and can be changed on the 'Grading' page (under "
 "'Settings') in Studio."
 msgstr ""
+"Click to display the grading configuration for the workshop. The grading "
+"configuration is the breakdown of graded subsections of the workshop (such as "
+"exams and problem sets), and can be changed on the 'Grading' page (under "
+"'Settings') in Studio."
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "Grading Configuration"
@@ -16984,6 +17226,11 @@ msgid ""
 "background, meaning it is OK to navigate away from this page while your "
 "report is generating."
 msgstr ""
+"For large workshops, generating some reports can take several hours. When "
+"report generation is complete, a link that includes the date and time of "
+"generation appears in the table below. These reports are generated in the "
+"background, meaning it is OK to navigate away from this page while your "
+"report is generating."
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid ""
@@ -16996,6 +17243,8 @@ msgid ""
 "Click to generate a CSV file of all students enrolled in this course, along "
 "with profile information such as email address and username:"
 msgstr ""
+"Click to generate a CSV file of all students enrolled in this workshop, along "
+"with profile information such as email address and username:"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "Download profile information as a CSV"
@@ -17006,6 +17255,8 @@ msgid ""
 "Click to generate a CSV file that lists learners who can enroll in the "
 "course but have not yet done so."
 msgstr ""
+"Click to generate a CSV file that lists learners who can enroll in the "
+"workshop but have not yet done so."
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "Download a CSV of learners who can enroll"
@@ -17015,6 +17266,7 @@ msgstr ""
 msgid ""
 "Click to generate a CSV file of all proctored exam results in this course."
 msgstr ""
+"Click to generate a CSV file of all proctored exam results in this workshop."
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "Generate Proctored Exam Results Report"
@@ -17022,7 +17274,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "Click to generate a CSV file of survey results for this course."
-msgstr ""
+msgstr "Click to generate a CSV file of survey results for this workshop."
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "Generate Survey Results Report"
@@ -17068,6 +17320,8 @@ msgid ""
 "For smaller courses, click to list profile information for enrolled students"
 " directly on this page:"
 msgstr ""
+"For smaller workshops, click to list profile information for enrolled students"
+" directly on this page:"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 msgid "List enrolled students' profile information"
@@ -17127,6 +17381,8 @@ msgid ""
 "Create one or more pre-paid course enrollment codes. Students can use these "
 "codes to enroll in the course."
 msgstr ""
+"Create one or more pre-paid workshop enrollment codes. Students can use these "
+"codes to enroll in the workshop."
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html
@@ -17143,7 +17399,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Download a .csv file of all enrollment codes for this course."
-msgstr ""
+msgstr "Download a .csv file of all enrollment codes for this workshop."
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Download All Enrollment Codes"
@@ -17151,7 +17407,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Download a .csv file of all unused enrollment codes for this course."
-msgstr ""
+msgstr "Download a .csv file of all unused enrollment codes for this workshop."
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Download Unused Enrollment Codes"
@@ -17159,7 +17415,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Download a .csv file of all used enrollment codes for this course."
-msgstr ""
+msgstr "Download a .csv file of all used enrollment codes for this workshop."
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Download Used Enrollment Codes"
@@ -17168,11 +17424,11 @@ msgstr ""
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 #: lms/templates/instructor/instructor_dashboard_2/set_course_mode_price_modal.html
 msgid "Course Price"
-msgstr ""
+msgstr "Workshop Price"
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Course price per seat: "
-msgstr ""
+msgstr "Workshop price per seat: "
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Edit Price"
@@ -17180,7 +17436,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Course Seat Purchases"
-msgstr ""
+msgstr "Workshop Seat Purchases"
 
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
 msgid "Total Credit Card Purchases: "
@@ -17670,6 +17926,8 @@ msgid ""
 "For analytics about your course, go to "
 "{link_start}{analytics_dashboard_name}{link_end}."
 msgstr ""
+"For analytics about your workshop, go to "
+"{link_start}{analytics_dashboard_name}{link_end}."
 
 #: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html
 msgid "Instructor Dashboard"
@@ -17677,7 +17935,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html
 msgid "View Course in Studio"
-msgstr ""
+msgstr "View Workshop in Studio"
 
 #: lms/templates/instructor/instructor_dashboard_2/invalidate_registration_code_modal.html
 msgid "Enrollment Code Status"
@@ -17742,6 +18000,10 @@ msgid ""
 "name, and country. Please include one student per row and do not include any"
 " headers, footers, or blank lines."
 msgstr ""
+"To register and enroll a list of users in this workshop, choose a CSV file "
+"that contains the following columns in this exact order: email, username, "
+"name, and country. Please include one student per row and do not include any"
+" headers, footers, or blank lines."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Upload a CSV for bulk enrollment"
@@ -17766,6 +18028,8 @@ msgid ""
 "If this option is {em_start}checked{em_end}, users who have not enrolled in "
 "your course will be automatically enrolled."
 msgstr ""
+"If this option is {em_start}checked{em_end}, users who have not enrolled in "
+"your workshop will be automatically enrolled."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Checking this box has no effect if 'Remove beta testers' is selected."
@@ -17783,14 +18047,14 @@ msgstr ""
 #. users can be added to.
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Course Team Management"
-msgstr ""
+msgstr "Workshop Team Management"
 
 #. Translators: an "Administrator Group" is a group, such as Course Staff,
 #. that
 #. users can be added to.
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Select a course team role:"
-msgstr ""
+msgstr "Select a workshop team role:"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Getting available lists..."
@@ -17802,6 +18066,9 @@ msgid ""
 "Admin must give you the Admin role to add Staff or Beta Testers, or the "
 "Discussion Admin role to add discussion moderators and TAs."
 msgstr ""
+"Staff cannot modify these lists. To manage workshop team membership, a workshop "
+"Admin must give you the Admin role to add Staff or Beta Testers, or the "
+"Discussion Admin role to add discussion moderators and TAs."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid ""
@@ -17810,6 +18077,10 @@ msgid ""
 "all course data. Staff also have access to your course in Studio and "
 "Insights. You can only give course team roles to enrolled users."
 msgstr ""
+"Workshop team members with the Staff role help you manage your workshop. Staff "
+"can enroll and unenroll learners, as well as modify their grades and access "
+"all workshop data. Staff also have access to your workshop in Studio and "
+"Insights. You can only give workshop team roles to enrolled users."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Add Staff"
@@ -17827,6 +18098,11 @@ msgid ""
 " to manage course team membership. You can only give course team roles to "
 "enrolled users."
 msgstr ""
+"Workshop team members with the Admin role help you manage your workshop. They "
+"can do all of the tasks that Staff can do, and can also add and remove the "
+"Staff and Admin roles, discussion moderation roles, and the beta tester role"
+" to manage workshop team membership. You can only give workshop team roles to "
+"enrolled users."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Add Admin"
@@ -17842,6 +18118,9 @@ msgid ""
 "sure that the content works, but have no additional privileges. You can only"
 " give course team roles to enrolled users."
 msgstr ""
+"Beta Testers can see workshop content before other learners. They can make "
+"sure that the content works, but have no additional privileges. You can only"
+" give workshop team roles to enrolled users."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Add Beta Tester"
