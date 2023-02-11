@@ -5690,7 +5690,7 @@ msgstr ""
 
 #: cms/static/js/views/license.js cms/templates/js/license-selector.underscore
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "BlueWaveAcademy all right reserved"
 
 #: cms/static/js/views/license.js
 msgid "You reserve all rights for your work"
