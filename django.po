@@ -3087,7 +3087,7 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Number Display String"
-msgstr ""
+msgstr "Workshop Number Display String"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
@@ -5226,7 +5226,7 @@ msgstr ""
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html
 msgid "All rights reserved"
-msgstr ""
+msgstr "BlueWaveAcademy all right reserved"
 
 #. Translators:  This text is bound to the HTML 'title' element of the page
 #. and appears
@@ -5628,6 +5628,10 @@ msgstr "Workshop starts in {time_remaining_string} at {course_start_time}."
 #: lms/djangoapps/courseware/date_summary.py
 msgid "Course End"
 msgstr "Workshop End"
+
+#: lms/djangoapps/courseware/date_summary.py
+msgid "Course ends"
+msgstr "Workshop ends"
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid ""
@@ -9667,6 +9671,14 @@ msgstr ""
 #: openedx/features/course_bookmarks/views/course_bookmarks.py
 #: lms/templates/courseware/courseware.html
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html
+msgid "Course Tools"
+msgstr "Workshop Tools"
+
+#: openedx/core/djangoapps/bookmarks/apps.py
+#: openedx/features/course_bookmarks/plugins.py
+#: openedx/features/course_bookmarks/views/course_bookmarks.py
+#: lms/templates/courseware/courseware.html
+#: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html
 msgid "Bookmarks"
 msgstr ""
 
@@ -9767,7 +9779,7 @@ msgstr ""
 
 #: openedx/core/djangoapps/config_model_utils/models.py
 msgid "Course in Org"
-msgstr ""
+msgstr "Workshop in Org"
 
 #: openedx/core/djangoapps/config_model_utils/models.py
 msgid ""
@@ -9779,7 +9791,7 @@ msgstr ""
 #: cms/templates/course-create-rerun.html cms/templates/index.html
 #: cms/templates/settings.html
 msgid "Course Run"
-msgstr ""
+msgstr "Workshop Run"
 
 #: openedx/core/djangoapps/config_model_utils/models.py
 msgid ""
@@ -12001,7 +12013,7 @@ msgstr ""
 #: cms/templates/course-create-rerun.html cms/templates/index.html
 #: cms/templates/settings.html lms/templates/courseware/course_about.html
 msgid "Course Number"
-msgstr ""
+msgstr "Workshop Number"
 
 #: cms/templates/course_outline.html
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
@@ -15213,6 +15225,9 @@ msgstr ""
 msgid "Resume Course"
 msgstr "Resume Workshop"
 
+msgid "Resume course"
+msgstr "Resume workshop"
+
 #: lms/templates/courseware/info.html
 msgid "View Updates in Studio"
 msgstr ""
@@ -17936,6 +17951,14 @@ msgstr ""
 msgid "View Course in Studio"
 msgstr "View Workshop in Studio"
 
+#: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html
+msgid "View course in Studio"
+msgstr "View workshop in Studio"
+
+#: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html
+msgid "View course in"
+msgstr "View workshop in"
+
 #: lms/templates/instructor/instructor_dashboard_2/invalidate_registration_code_modal.html
 msgid "Enrollment Code Status"
 msgstr ""
@@ -18443,7 +18466,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Location of problem in course"
-msgstr ""
+msgstr "Location of problem in workshop"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Example"
@@ -18598,7 +18621,7 @@ msgstr ""
 #: lms/templates/learner_dashboard/_dashboard_navigation_courses.html
 #: themes/edx.org/lms/templates/dashboard.html
 msgid "My Courses"
-msgstr ""
+msgstr "My Workshops"
 
 #: lms/templates/learner_dashboard/program_details.html
 msgid "Program Details"
@@ -19623,7 +19646,7 @@ msgstr ""
 
 #: openedx/core/lib/license/templates/license.html
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "BlueWaveAcademy all Right Reserved"
 
 #: openedx/core/lib/license/templates/license.html
 msgid "Attribution"
