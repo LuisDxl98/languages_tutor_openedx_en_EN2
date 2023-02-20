@@ -19035,7 +19035,11 @@ msgid_plural ""
 "You have successfully purchased <b>{number} course registration codes</b> "
 "for {course_names}."
 msgstr[0] ""
+"You have successfully purchased <b>{number} workshop registration code</b> for"
+" {course_names}."
 msgstr[1] ""
+"You have successfully purchased <b>{number} workshop registration codes</b> "
+"for {course_names}."
 
 #: lms/templates/shoppingcart/receipt.html
 msgid "The following receipt has been emailed to {receipient_emails}"
@@ -19163,7 +19167,7 @@ msgstr ""
 #: lms/templates/shoppingcart/registration_code_receipt.html
 #: lms/templates/shoppingcart/registration_code_redemption.html
 msgid "Confirm your enrollment for: {span_start}course dates{span_end}"
-msgstr ""
+msgstr "Confirm your enrollment for: {span_start}workshop dates{span_end}"
 
 #: lms/templates/shoppingcart/registration_code_receipt.html
 msgid "{course_name}"
@@ -19176,6 +19180,9 @@ msgid ""
 "Check your {link_start}course dashboard{link_end} to see if you're enrolled "
 "in the course, or contact your company's administrator."
 msgstr ""
+"You've clicked a link for an enrollment code that has already been used. "
+"Check your {link_start}workshop dashboard{link_end} to see if you're enrolled "
+"in the course, or contact your company's administrator."
 
 #: lms/templates/shoppingcart/registration_code_receipt.html
 #: lms/templates/shoppingcart/registration_code_redemption.html
@@ -19183,6 +19190,8 @@ msgid ""
 "You have successfully enrolled in {course_name}. This course has now been "
 "added to your dashboard."
 msgstr ""
+"You have successfully enrolled in {course_name}. This workshop has now been "
+"added to your dashboard."
 
 #: lms/templates/shoppingcart/registration_code_receipt.html
 #: lms/templates/shoppingcart/registration_code_redemption.html
@@ -19193,11 +19202,11 @@ msgstr ""
 
 #: lms/templates/shoppingcart/registration_code_receipt.html
 msgid "The course you are enrolling for is full."
-msgstr ""
+msgstr "The workshop you are enrolling for is full."
 
 #: lms/templates/shoppingcart/registration_code_receipt.html
 msgid "The course you are enrolling for is closed."
-msgstr ""
+msgstr "The workshop you are enrolling for is closed."
 
 #: lms/templates/shoppingcart/registration_code_receipt.html
 #: lms/templates/shoppingcart/registration_code_redemption.html
@@ -19215,7 +19224,7 @@ msgstr ""
 #: lms/templates/shoppingcart/registration_code_receipt.html
 #: lms/templates/shoppingcart/registration_code_redemption.html
 msgid "Activate Course Enrollment"
-msgstr ""
+msgstr "Activate Workshop Enrollment"
 
 #: lms/templates/shoppingcart/shopping_cart.html
 msgid ""
@@ -19337,6 +19346,10 @@ msgid ""
 " sanctions.Unfortunately, because {platform_name} is required to comply with"
 " export controls,we cannot allow you to access this course at this time."
 msgstr ""
+"Our system indicates that you are trying to access this {platform_name} "
+"workshop from a country or region currently subject to U.S. economic and trade"
+" sanctions.Unfortunately, because {platform_name} is required to comply with"
+" export controls,we cannot allow you to access this workshop at this time."
 
 #: lms/templates/static_templates/faq.html
 #: themes/red-theme/lms/templates/footer.html
@@ -19416,7 +19429,7 @@ msgstr ""
 
 #: lms/templates/support/feature_based_enrollments.html
 msgid "Course Duration Limits"
-msgstr ""
+msgstr "Workshop Duration Limits"
 
 #: lms/templates/support/feature_based_enrollments.html
 msgid "Is Enabled"
@@ -19476,7 +19489,7 @@ msgstr ""
 
 #: lms/templates/survey/survey.html
 msgid "Pre-Course Survey"
-msgstr ""
+msgstr "Pre-Workshop Survey"
 
 #: lms/templates/survey/survey.html
 msgid ""
@@ -19485,6 +19498,10 @@ msgid ""
 " use of {platform_name} only. It will not be linked to your public profile "
 "in any way."
 msgstr ""
+"You can begin your workshop as soon as you complete the following form. "
+"Required fields are marked with an asterisk (*). This information is for the"
+" use of {platform_name} only. It will not be linked to your public profile "
+"in any way."
 
 #: lms/templates/survey/survey.html
 msgid "You are missing the following required fields:"
@@ -19504,6 +19521,9 @@ msgid ""
 "and future students. The more we know about your specific needs, the better "
 "we can make your course experience."
 msgstr ""
+"We use the information you provide to improve our workshop for both current "
+"and future students. The more we know about your specific needs, the better "
+"we can make your workshop experience."
 
 #: lms/templates/survey/survey.html
 msgid "Who can I contact if I have questions?"
@@ -19514,6 +19534,8 @@ msgid ""
 "If you have any questions about this course or this form, you can contact "
 "{link_start}{mail_to_link}{link_end}."
 msgstr ""
+"If you have any questions about this workshop or this form, you can contact "
+"{link_start}{mail_to_link}{link_end}."
 
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html
 msgid "Skeleton Page"
@@ -19563,6 +19585,8 @@ msgid ""
 "The deadline to upgrade to a verified certificate for this course has "
 "passed."
 msgstr ""
+"The deadline to upgrade to a verified certificate for this workshop has "
+"passed."
 
 #: lms/templates/verify_student/pay_and_verify.html
 msgid "Upgrade Your Enrollment For {course_name}."
@@ -19645,7 +19669,7 @@ msgstr ""
 
 #: lms/templates/wiki/includes/breadcrumbs.html
 msgid "Course Wiki"
-msgstr ""
+msgstr "Workshop Wiki"
 
 #: lms/templates/wiki/includes/breadcrumbs.html wiki/templates/wiki/dir.html
 msgid "Add article"
@@ -19697,7 +19721,7 @@ msgstr ""
 
 #: openedx/features/course_experience/templates/course_experience/course-dates-fragment.html
 msgid "Important Course Dates"
-msgstr ""
+msgstr "Important Workshop Dates"
 
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Goal: "
@@ -19705,7 +19729,7 @@ msgstr ""
 
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Edit your course goal:"
-msgstr ""
+msgstr "Edit your workshop goal:"
 
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Pursue a verified certificate"
@@ -19805,7 +19829,7 @@ msgstr ""
 
 #: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html
 msgid "This course does not have any updates."
-msgstr ""
+msgstr "This workshop does not have any updates."
 
 #: openedx/features/course_experience/templates/course_experience/dates-summary.html
 msgid "Today is {date}"
@@ -19888,6 +19912,8 @@ msgid ""
 "Access Course Staff Support on the Partner Portal to submit or review "
 "support tickets"
 msgstr ""
+"Access Workshop Staff Support on the Partner Portal to submit or review "
+"support tickets"
 
 #: themes/edx.org/cms/templates/widgets/sock.html
 msgid "edX Partner Portal"
@@ -20053,6 +20079,8 @@ msgid ""
 "Once registered, most questions can be answered in the course specific "
 "discussion forums or through the FAQs."
 msgstr ""
+"Once registered, most questions can be answered in the workshop specific "
+"discussion forums or through the FAQs."
 
 #: themes/stanford-style/lms/templates/emails/activation_email.txt
 msgid "Thank you for signing up for {platform_name}."
@@ -20093,6 +20121,9 @@ msgid ""
 "name from {old_name} to {new_name}. If you need further assistance, please "
 "e-mail the tech support at {email}"
 msgstr ""
+"We are sorry. Our workshop staff did not approve your request to change your "
+"name from {old_name} to {new_name}. If you need further assistance, please "
+"e-mail the tech support at {email}"
 
 #: themes/stanford-style/lms/templates/static_templates/tos.html
 msgid "Put your Terms of Service here!"
@@ -20219,6 +20250,8 @@ msgid ""
 "Specify a course title to use on the certificate if the course's official "
 "title is too long to be displayed well."
 msgstr ""
+"Specify a workshop title to use on the certificate if the course's official "
+"title is too long to be displayed well."
 
 #: cms/templates/certificates.html
 msgid ""
@@ -20238,6 +20271,8 @@ msgid ""
 "To view a sample certificate, choose a course mode and select "
 "{em_start}Preview Certificate{em_end}."
 msgstr ""
+"To view a sample certificate, choose a workshop mode and select "
+"{em_start}Preview Certificate{em_end}."
 
 #: cms/templates/certificates.html
 msgid "Issuing Certificates to Learners"
@@ -20249,6 +20284,9 @@ msgid ""
 "Staff or Admin role selects {em_start}Activate{em_end}. Only course team "
 "members with these roles can edit or delete an activated certificate."
 msgstr ""
+"To begin issuing workshop certificates, a workshop team member with either the "
+"Staff or Admin role selects {em_start}Activate{em_end}. Only workshop team "
+"members with these roles can edit or delete an activated certificate."
 
 #: cms/templates/certificates.html
 msgid ""
@@ -20256,6 +20294,9 @@ msgid ""
 "learners who have already earned certificates will no longer be able to "
 "access them."
 msgstr ""
+"{em_start}Do not{em_end} delete certificates after a workshop has started; "
+"learners who have already earned certificates will no longer be able to "
+"access them."
 
 #: cms/templates/certificates.html
 msgid "Learn more about certificates"
@@ -20424,16 +20465,20 @@ msgid ""
 "Provide identifying information for this re-run of the course. The original "
 "course is not affected in any way by a re-run."
 msgstr ""
+"Provide identifying information for this re-run of the course. The original "
+"workshop is not affected in any way by a re-run."
 
 #: cms/templates/course-create-rerun.html
 msgid ""
 "Note: Together, the organization, course number, and course run must "
 "uniquely identify this new course instance."
 msgstr ""
+"Note: Together, the organization, workshop number, and workshop run must "
+"uniquely identify this new workshop instance."
 
 #: cms/templates/course-create-rerun.html
 msgid "Required Information to Create a re-run of a course"
-msgstr ""
+msgstr "Required Information to Create a re-run of a workshop"
 
 #. Translators: This is an example name for a new course, seen when
 #. filling out the form to create a new course.
@@ -20446,6 +20491,8 @@ msgid ""
 "The public display name for the new course. (This name is often the same as "
 "the original course name.)"
 msgstr ""
+"The public display name for the new course. (This name is often the same as "
+"the original workshop name.)"
 
 #: cms/templates/course-create-rerun.html cms/templates/index.html
 #: cms/templates/settings.html
@@ -20485,6 +20532,9 @@ msgid ""
 "(This number will be the same as the original course number and cannot be "
 "changed.)"
 msgstr ""
+"The unique number that identifies the new workshop within the organization.  "
+"(This number will be the same as the original workshop number and cannot be "
+"changed.)"
 
 #. Translators: This is an example for the "run" used to identify different
 #. instances of a course, seen when filling out the form to create a new
@@ -20498,6 +20548,8 @@ msgid ""
 "The term in which the new course will run. (This value is often different "
 "than the original course run value.)"
 msgstr ""
+"The term in which the new workshop will run. (This value is often different "
+"than the original workshop run value.)"
 
 #: cms/templates/course-create-rerun.html
 msgid "Create Re-run"
@@ -20505,7 +20557,7 @@ msgstr ""
 
 #: cms/templates/course-create-rerun.html
 msgid "When will my course re-run start?"
-msgstr ""
+msgstr "When will my workshop re-run start?"
 
 #: cms/templates/course-create-rerun.html
 msgid "The new course is set to start on January 1, 2030 at midnight (UTC)."
