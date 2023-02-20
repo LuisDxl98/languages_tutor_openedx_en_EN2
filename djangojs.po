@@ -2298,6 +2298,8 @@ msgid ""
 "For inquiries regarding assignments, grades, or structure of a specific "
 "course, please post in the discussion forums for that course directly."
 msgstr ""
+"For inquiries regarding assignments, grades, or structure of a specific "
+"workshop, please post in the discussion forums for that workshop directly."
 
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx
 msgid "Not specific to a course"
@@ -2385,6 +2387,8 @@ msgid ""
 "Select a course or select \"Not specific to a course\" for your support "
 "request."
 msgstr ""
+"Select a workshop or select \"Not specific to a workshop\" for your support "
+"request."
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx
 msgid "Select a subject for your support request."
@@ -3012,10 +3016,11 @@ msgstr ""
 msgid ""
 " learners are not enrolled in course and not added to the exception list"
 msgstr ""
+" learners are not enrolled in workshop and not added to the exception list"
 
 #: lms/static/js/certificates/views/certificate_bulk_whitelist.js
 msgid " learner is not enrolled in course and not added to the exception list"
-msgstr ""
+msgstr " learner is not enrolled in workshop and not added to the exception list"
 
 #: lms/static/js/certificates/views/certificate_invalidation_view.js
 msgid ""
@@ -3110,6 +3115,8 @@ msgid ""
 "Are you sure you want to unenroll from the purchased course {courseName} "
 "({courseNumber})?"
 msgstr ""
+"Are you sure you want to unenroll from the purchased workshop {courseName} "
+"({courseNumber})?"
 
 #: lms/static/js/dashboard/legacy.js
 msgid "Are you sure you want to unenroll from {courseName} ({courseNumber})?"
@@ -3132,6 +3139,8 @@ msgid ""
 "The refund deadline for this course has passed,so you will not receive a "
 "refund."
 msgstr ""
+"The refund deadline for this workshop has passed,so you will not receive a "
+"refund."
 
 #: lms/static/js/dashboard/legacy.js
 #: lms/static/js/learner_dashboard/views/unenroll_view.js
@@ -3192,7 +3201,7 @@ msgstr ""
 
 #: lms/static/js/discussions_management/views/discussions.js
 msgid "Discussion topics in the course are not divided."
-msgstr ""
+msgstr "Discussion topics in the workshop are not divided."
 
 #: lms/static/js/discussions_management/views/discussions.js
 msgid "Any divided discussion topics are divided based on enrollment track."
@@ -3437,6 +3446,10 @@ msgid ""
 "'{verifiedCohortName}'. To change the configuration for verified track "
 "cohorts, contact your edX partner manager."
 msgstr ""
+"This workshop uses automatic cohorting for verified track learners. You cannot"
+" disable cohorts, and you cannot rename the manual cohort named "
+"'{verifiedCohortName}'. To change the configuration for verified track "
+"cohorts, contact your edX partner manager."
 
 #: lms/static/js/groups/views/verified_track_settings_notification.js
 msgid ""
@@ -3444,12 +3457,17 @@ msgid ""
 " the required cohort does not exist. You must create a manually-assigned "
 "cohort named '{verifiedCohortName}' for the feature to work."
 msgstr ""
+"This workshop has automatic cohorting enabled for verified track learners, but"
+" the required cohort does not exist. You must create a manually-assigned "
+"cohort named '{verifiedCohortName}' for the feature to work."
 
 #: lms/static/js/groups/views/verified_track_settings_notification.js
 msgid ""
 "This course has automatic cohorting enabled for verified track learners, but"
 " cohorts are disabled. You must enable cohorts for the feature to work."
 msgstr ""
+"This workshop has automatic cohorting enabled for verified track learners, but"
+" cohorts are disabled. You must enable cohorts for the feature to work."
 
 #: lms/static/js/instructor_dashboard/certificates.js
 msgid "Allow students to generate certificates for this course?"
@@ -3731,6 +3749,7 @@ msgstr ""
 msgid ""
 "These users were not affiliated with the course so could not be unenrolled:"
 msgstr ""
+"These users were not affiliated with the workshop so could not be unenrolled:"
 
 #: lms/static/js/instructor_dashboard/send_email.js
 msgid "Your message must have a subject."
@@ -4165,7 +4184,7 @@ msgstr ""
 
 #: lms/static/js/learner_dashboard/views/course_entitlement_view.js
 msgid "Any course progress or grades from your current session will be lost."
-msgstr ""
+msgstr "Any workshop progress or grades from your current session will be lost."
 
 #: lms/static/js/learner_dashboard/views/course_entitlement_view.js
 msgid "Are you sure that you want to leave this session?"
@@ -4393,11 +4412,11 @@ msgstr "Enrolling you in the selected workshop"
 
 #: lms/static/js/student_account/views/FinishAuthView.js
 msgid "Adding the selected course to your cart"
-msgstr ""
+msgstr "Adding the selected workshop to your cart"
 
 #: lms/static/js/student_account/views/FinishAuthView.js
 msgid "Loading your courses"
-msgstr ""
+msgstr "Loading your workshops"
 
 #: lms/static/js/student_account/views/FormView.js
 #: lms/static/js/student_account/views/RegisterView.js
@@ -4486,6 +4505,7 @@ msgstr ""
 msgid ""
 "You receive messages from {platform_name} and course teams at this address."
 msgstr ""
+"You receive messages from {platform_name} and workshop teams at this address."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Recovery Email Address"
@@ -4556,6 +4576,9 @@ msgid ""
 "time zone, course dates, including assignment deadlines, will be displayed "
 "in your browser's local time zone."
 msgstr ""
+"Select the time zone for displaying workshop dates. If you do not specify a "
+"time zone, workshop dates, including assignment deadlines, will be displayed "
+"in your browser's local time zone."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "All Time Zones"
@@ -4905,6 +4928,8 @@ msgid ""
 "You cannot view the course as a student or beta tester before the course "
 "release date."
 msgstr ""
+"You cannot view the workshop as a student or beta tester before the workshop "
+"release date."
 
 #: lms/templates/class_dashboard/d3_stacked_bar_graph.js
 msgid "%(num_students)s student opened Subsection"
@@ -4938,7 +4963,7 @@ msgstr ""
 
 #: openedx/features/course_experience/static/course_experience/js/CourseGoals.js
 msgid "Thank you for setting your course goal to {goal}!"
-msgstr ""
+msgstr "Thank you for setting your workshop goal to {goal}!"
 
 #: openedx/features/course_experience/static/course_experience/js/CourseHome.js
 msgid "You have successfully updated your goal."
@@ -5150,13 +5175,15 @@ msgstr ""
 
 #: cms/static/js/factories/manage_users.js
 msgid "Already a course team member"
-msgstr ""
+msgstr "Already a workshop team member"
 
 #: cms/static/js/factories/manage_users.js
 msgid ""
 "Are you sure you want to delete {email} from the course team for "
 "“{container}”?"
 msgstr ""
+"Are you sure you want to delete {email} from the workshop team for "
+"“{container}”?"
 
 #: cms/static/js/factories/manage_users.js
 #: cms/static/js/factories/manage_users_lib.js
@@ -5221,7 +5248,7 @@ msgstr ""
 
 #: cms/static/js/features/import/factories/import.js
 msgid "There was an error while importing the new course to our database."
-msgstr ""
+msgstr "There was an error while importing the new workshop to our database."
 
 #: cms/static/js/features/import/factories/import.js
 msgid "Your import has failed."
@@ -5335,15 +5362,15 @@ msgstr ""
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The course must have an assigned start date."
-msgstr ""
+msgstr "The workshop must have an assigned start date."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The course end date must be later than the course start date."
-msgstr ""
+msgstr "The workshop end date must be later than the workshop start date."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The course start date must be later than the enrollment start date."
-msgstr ""
+msgstr "The workshop start date must be later than the enrollment start date."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The enrollment start date cannot be after the enrollment end date."
@@ -5351,11 +5378,11 @@ msgstr ""
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The enrollment end date cannot be after the course end date."
-msgstr ""
+msgstr "The enrollment end date cannot be after the workshop end date."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The certificate available date must be later than the course end date."
-msgstr ""
+msgstr "The certificate available date must be later than the workshop end date."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "Key should only contain letters, numbers, _, or -"
@@ -5631,10 +5658,13 @@ msgid ""
 " identify the failed component. Inspect your course to identify any "
 "problematic components and try again."
 msgstr ""
+"Your workshop could not be exported to XML. There is not enough information to"
+" identify the failed component. Inspect your workshop to identify any "
+"problematic components and try again."
 
 #: cms/static/js/views/export.js
 msgid "Take me to the main course page"
-msgstr ""
+msgstr "Take me to the main workshop page"
 
 #: cms/static/js/views/export.js
 msgid "The raw error message is:"
@@ -6062,6 +6092,8 @@ msgid ""
 "Removing a video from this list does not affect course content. Any content "
 "that uses a previously uploaded video ID continues to display in the course."
 msgstr ""
+"Removing a video from this list does not affect workshop content. Any content "
+"that uses a previously uploaded video ID continues to display in the course."
 
 #: cms/static/js/views/settings/advanced.js
 msgid ""
@@ -6090,11 +6122,11 @@ msgstr "Workshop Credit Requirements"
 
 #: cms/static/js/views/settings/main.js
 msgid "The minimum grade for course credit is not set."
-msgstr ""
+msgstr "The minimum grade for workshop credit is not set."
 
 #: cms/static/js/views/settings/main.js
 msgid "Course pacing cannot be changed once a course has started."
-msgstr "Workshop pacing cannot be changed once a course has started."
+msgstr "Workshop pacing cannot be changed once a workshop has started."
 
 #: cms/static/js/views/settings/main.js
 msgid "{hours}:{minutes} (current UTC time)"
@@ -6102,7 +6134,7 @@ msgstr ""
 
 #: cms/static/js/views/settings/main.js
 msgid "Upload your course image."
-msgstr ""
+msgstr "Upload your workshop image."
 
 #: cms/static/js/views/settings/main.js
 msgid "Upload your banner image."
@@ -6146,6 +6178,8 @@ msgid ""
 "The combined length of the organization, course number, and course run "
 "fields cannot be more than <%=limit%> characters."
 msgstr ""
+"The combined length of the organization, workshop number, and workshop run "
+"fields cannot be more than <%=limit%> characters."
 
 #: cms/static/js/views/utils/create_library_utils.js
 msgid ""
@@ -6901,6 +6935,8 @@ msgid ""
 "To finalize course credit, %(display_name)s requires %(platform_name)s "
 "learners to submit a credit request."
 msgstr ""
+"To finalize workshop credit, %(display_name)s requires %(platform_name)s "
+"learners to submit a credit request."
 
 #: lms/templates/commerce/provider.underscore
 msgid "Get Credit"
@@ -6966,6 +7002,9 @@ msgid ""
 "from your dashboard. You will receive periodic reminders from {platformName}"
 " to verify your identity."
 msgstr ""
+"If you don't verify your identity now, you can still explore your workshop "
+"from your dashboard. You will receive periodic reminders from {platformName}"
+" to verify your identity."
 
 #: lms/templates/commerce/receipt.underscore
 #: lms/templates/verify_student/payment_confirmation_step.underscore
@@ -7352,7 +7391,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore
 msgid "Only the parent course staff of a CCX can create content groups."
-msgstr ""
+msgstr "Only the parent workshop staff of a CCX can create content groups."
 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore
 msgid "Create a content group"
@@ -7410,6 +7449,9 @@ msgid ""
 "file, download course profile information or cohort results on the "
 "{link_start}Data Download{link_end} page."
 msgstr ""
+"To review learner cohort assignments or see the results of uploading a CSV "
+"file, download workshop profile information or cohort results on the "
+"{link_start}Data Download{link_end} page."
 
 #: lms/templates/instructor/instructor_dashboard_2/discussions.underscore
 msgid "Specify whether discussion topics are divided"
@@ -7887,6 +7929,10 @@ msgid ""
 "certificates. Verification is good for one year. After one year, you must "
 "submit photos for verification again."
 msgstr ""
+"Thank you for submitting your photos. We will review them shortly. You can "
+"now sign up for any %(platformName)s workshop that offers verified "
+"certificates. Verification is good for one year. After one year, you must "
+"submit photos for verification again."
 
 #: lms/templates/verify_student/error.underscore
 msgid "Error:"
@@ -8248,6 +8294,9 @@ msgid ""
 "from your dashboard. You will receive periodic reminders from "
 "%(platformName)s to verify your identity."
 msgstr ""
+"If you don't verify your identity now, you can still explore your workshop "
+"from your dashboard. You will receive periodic reminders from "
+"%(platformName)s to verify your identity."
 
 #: lms/templates/verify_student/reverify_success_step.underscore
 msgid "Identity Verification In Progress"
@@ -8260,6 +8309,10 @@ msgid ""
 "(usually within 1-2 days). In the meantime, you can still access all "
 "available course content."
 msgstr ""
+"We have received your information and are verifying your identity. You will "
+"see a message on your dashboard when the verification process is complete "
+"(usually within 1-2 days). In the meantime, you can still access all "
+"available workshop content."
 
 #: lms/templates/verify_student/reverify_success_step.underscore
 msgid "Return to Your Dashboard"
@@ -8542,7 +8595,7 @@ msgstr ""
 
 #: cms/templates/js/asset-library.underscore
 msgid "You haven't added any assets to this course yet."
-msgstr ""
+msgstr "You haven't added any assets to this workshop yet."
 
 #: cms/templates/js/asset-library.underscore
 msgid "Upload your first asset"
@@ -8647,6 +8700,8 @@ msgid ""
 "Specify an alternative to the official course title to display on "
 "certificates. Leave blank to use the official course title."
 msgstr ""
+"Specify an alternative to the official workshop title to display on "
+"certificates. Leave blank to use the official workshop title."
 
 #: cms/templates/js/certificate-editor.underscore
 msgid "Add Additional Signatory"
@@ -8727,7 +8782,7 @@ msgstr ""
 
 #: cms/templates/js/content-visibility-editor.underscore
 msgid "Hide content after course end date"
-msgstr ""
+msgstr "Hide content after workshop end date"
 
 #: cms/templates/js/content-visibility-editor.underscore
 msgid "Hide content after due date"
@@ -8754,6 +8809,8 @@ msgid ""
 "Learners do not see the subsection in the course outline. The subsection is "
 "not included in grade calculations."
 msgstr ""
+"Learners do not see the subsection in the workshop outline. The subsection is "
+"not included in grade calculations."
 
 #: cms/templates/js/content-visibility-editor.underscore
 #, python-format
@@ -8949,7 +9006,7 @@ msgstr ""
 
 #: cms/templates/js/course-outline.underscore
 msgid "Subsection is hidden after course end date"
-msgstr ""
+msgstr "Subsection is hidden after workshop end date"
 
 #: cms/templates/js/course-outline.underscore
 msgid "Subsection is hidden after due date"
@@ -8958,7 +9015,7 @@ msgstr ""
 #: cms/templates/js/course-outline.underscore
 #: cms/templates/js/xblock-outline.underscore
 msgid "You haven't added any content to this course yet."
-msgstr ""
+msgstr "You haven't added any content to this workshop yet."
 
 #: cms/templates/js/course-outline.underscore
 #: cms/templates/js/xblock-outline.underscore
@@ -8993,11 +9050,11 @@ msgstr ""
 
 #: cms/templates/js/course-video-settings-update-settings-footer.underscore
 msgid "Press update settings to update course video settings"
-msgstr ""
+msgstr "Press update settings to update workshop video settings"
 
 #: cms/templates/js/course-video-settings.underscore
 msgid "Press close to hide course video settings"
-msgstr ""
+msgstr "Press close to hide workshop video settings"
 
 #: cms/templates/js/course-video-settings.underscore
 msgid "Course Video Settings"
@@ -9085,6 +9142,8 @@ msgid ""
 "The number of subsections in the course that contain problems of this "
 "assignment type."
 msgstr ""
+"The number of subsections in the workshop that contain problems of this "
+"assignment type."
 
 #: cms/templates/js/course_grade_policy.underscore
 msgid "Number of Droppable"
@@ -9214,6 +9273,8 @@ msgid ""
 "This Group Configuration is not in use. Start by adding a content experiment"
 " to any Unit via the {linkStart}Course Outline{linkEnd}."
 msgstr ""
+"This Group Configuration is not in use. Start by adding a content experiment"
+" to any Unit via the {linkStart}Workshop Outline{linkEnd}."
 
 #: cms/templates/js/group-configuration-editor.underscore
 msgid "Group Configuration information"
@@ -9272,6 +9333,8 @@ msgid ""
 "This feature is currently in testing. Course teams can enter highlights, but"
 " learners will not receive email messages."
 msgstr ""
+"This feature is currently in testing. Workshop teams can enter highlights, but"
+" learners will not receive email messages."
 
 #: cms/templates/js/highlights-editor.underscore
 msgid ""
@@ -9369,7 +9432,7 @@ msgstr ""
 
 #: cms/templates/js/no-textbooks.underscore
 msgid "You haven't added any textbooks to this course yet."
-msgstr ""
+msgstr "You haven't added any textbooks to this workshop yet."
 
 #: cms/templates/js/no-textbooks.underscore
 msgid "Add your first textbook"
@@ -9384,6 +9447,8 @@ msgid ""
 "In the {linkStart}Course Outline{linkEnd}, use this group to control access "
 "to a component."
 msgstr ""
+"In the {linkStart}Workshop Outline{linkEnd}, use this group to control access "
+"to a component."
 
 #: cms/templates/js/previous-video-upload-list.underscore
 msgid "Previous Uploads"
@@ -9556,12 +9621,17 @@ msgid ""
 "incorrect, nor the score received, until after the course end date has "
 "passed."
 msgstr ""
+"Learners do not see whether their answers to assessments were correct or "
+"incorrect, nor the score received, until after the workshop end date has "
+"passed."
 
 #: cms/templates/js/show-correctness-editor.underscore
 msgid ""
 "If the course does not have an end date, learners always see their scores "
 "when they submit answers to assessments."
 msgstr ""
+"If the workshop does not have an end date, learners always see their scores "
+"when they submit answers to assessments."
 
 #: cms/templates/js/show-correctness-editor.underscore
 msgid ""
@@ -9842,6 +9912,8 @@ msgid ""
 "Please check the following validation feedbacks and reflect them in your "
 "course settings:"
 msgstr ""
+"Please check the following validation feedbacks and reflect them in your "
+"workshop settings:"
 
 #: cms/templates/js/verification-access-editor.underscore
 msgid "Verification Checkpoint"
@@ -9894,6 +9966,8 @@ msgid ""
 "You have done a dry run of force publishing the course. Nothing has changed."
 " Had you run it, the following course versions would have been change."
 msgstr ""
+"You have done a dry run of force publishing the course. Nothing has changed."
+" Had you run it, the following workshop versions would have been change."
 
 #: cms/templates/js/maintenance/force-published-course-response.underscore
 msgid ""
