@@ -254,6 +254,9 @@ msgid ""
 "this mode. Leave this blank if users can enroll in this mode until "
 "enrollment closes for the course."
 msgstr ""
+"OPTIONAL: After this date/time, users will no longer be able to enroll in "
+"this mode. Leave this blank if users can enroll in this mode until "
+"enrollment closes for the workshop."
 
 #: common/djangoapps/course_modes/models.py
 msgid ""
@@ -794,11 +797,11 @@ msgstr ""
 
 #: common/djangoapps/student/views/management.py
 msgid "You are not enrolled in this course"
-msgstr "You are not enrolled in this course"
+msgstr "You are not enrolled in this workshop"
 
 #: common/djangoapps/student/views/management.py
 msgid "Your certificate prevents you from unenrolling from this course"
-msgstr ""
+msgstr "Your certificate prevents you from unenrolling from this workshop"
 
 #: common/djangoapps/student/views/management.py
 msgid "Enrollment action is invalid"
@@ -853,6 +856,9 @@ msgid ""
 "receive email updates and alerts from us related to the courses you are "
 "enrolled in. Sign In to continue."
 msgstr ""
+"{html_start}Success! You have activated your account.{html_end}You will now "
+"receive email updates and alerts from us related to the workshops you are "
+"enrolled in. Sign In to continue."
 
 #: common/djangoapps/student/views/management.py
 msgid ""
@@ -1568,6 +1574,10 @@ msgid ""
 "accordingly, as deprecated does not impact whether or not new XBlock "
 "instances can be created in Studio."
 msgstr ""
+"Only XBlocks listed in a workshop's Advanced Module List can be flagged as "
+"deprecated. Remember to update XBlockStudioConfiguration support state "
+"accordingly, as deprecated does not impact whether or not new XBlock "
+"instances can be created in Studio."
 
 #: common/djangoapps/xblock_django/admin.py
 msgid ""
@@ -2897,9 +2907,6 @@ msgstr ""
 "on the Workshop Home page. Your workshop handouts appear in the right panel of "
 "the page."
 
-#: common/lib/xmodule/xmodule/course_module.py
-#: lms/templates/courseware/info.html
-#: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Course Handouts"
 msgstr "Workshop Handouts"
 
@@ -3106,7 +3113,7 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Organization Display String"
-msgstr ""
+msgstr "Workshop Organization Display String"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
@@ -3115,6 +3122,10 @@ msgid ""
 "course. To use the organization that you entered when you created the "
 "course, enter null."
 msgstr ""
+"Enter the workshop organization that you want to appear in the workshop. This "
+"setting overrides the organization that you entered when you created the "
+"workshop. To use the organization that you entered when you created the "
+"workshop, enter null."
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Number Display String"
@@ -3127,10 +3138,14 @@ msgid ""
 " use the course number that you entered when you created the course, enter "
 "null."
 msgstr ""
+"Enter the workshop number that you want to appear in the workshop. This setting "
+"overrides the workshop number that you entered when you created the workshop. To"
+" use the workshop number that you entered when you created the workshop, enter "
+"null."
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Maximum Student Enrollment"
-msgstr ""
+msgstr "Workshop Maximum Student Enrollment"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
@@ -20561,7 +20576,7 @@ msgstr "When will my workshop re-run start?"
 
 #: cms/templates/course-create-rerun.html
 msgid "The new course is set to start on January 1, 2030 at midnight (UTC)."
-msgstr ""
+msgstr "The new workshop is set to start on January 1, 2030 at midnight (UTC)."
 
 #: cms/templates/course-create-rerun.html
 msgid "What transfers from the original course?"
@@ -20573,6 +20588,9 @@ msgid ""
 "course. All problems, videos, announcements, and other files are duplicated "
 "to the new course."
 msgstr ""
+"The new workshop has the same workshop outline and content as the original "
+"course. All problems, videos, announcements, and other files are duplicated "
+"to the new course."
 
 #: cms/templates/course-create-rerun.html
 msgid "What does not transfer from the original course?"
@@ -20587,7 +20605,7 @@ msgstr ""
 
 #: cms/templates/course-create-rerun.html
 msgid "Learn more about Course Re-runs"
-msgstr ""
+msgstr "Learn more about Workshop Re-runs"
 
 #: cms/templates/course_info.html
 msgid "Course Updates"
@@ -20603,6 +20621,9 @@ msgid ""
 " particular discussions in the forums, announce schedule changes, and "
 "respond to student questions. You add or edit updates in HTML."
 msgstr ""
+"Use workshop updates to notify students of important dates or exams, highlight"
+" particular discussions in the forums, announce schedule changes, and "
+"respond to student questions. You add or edit updates in HTML."
 
 #: cms/templates/course_outline.html
 msgid ""
@@ -20628,7 +20649,7 @@ msgstr ""
 
 #: cms/templates/course_outline.html
 msgid "This course uses features that are no longer supported."
-msgstr ""
+msgstr "This workshop uses features that are no longer supported."
 
 #: cms/templates/course_outline.html
 msgid "You must delete or replace the following components."
@@ -20649,6 +20670,10 @@ msgid ""
 "the {link_start}Advanced Settings page{link_end}, locate the \"Advanced "
 "Module List\" setting, and then delete the following modules from the list."
 msgstr ""
+"To avoid errors, {platform_name} strongly recommends that you remove "
+"unsupported features from the workshop advanced settings. To do this, go to "
+"the {link_start}Advanced Settings page{link_end}, locate the \"Advanced "
+"Module List\" setting, and then delete the following modules from the list."
 
 #: cms/templates/course_outline.html
 msgid "Unsupported Advance Modules"
@@ -20699,6 +20724,8 @@ msgid ""
 "Create a section, then add subsections and units. Open a unit to add course "
 "components."
 msgstr ""
+"Create a section, then add subsections and units. Open a unit to add workshop "
+"components."
 
 #: cms/templates/course_outline.html
 msgid "Reorganizing your course"
@@ -20816,6 +20843,9 @@ msgid ""
 "course content. For example, you can create pages for the grading policy, "
 "course slides, and a course calendar. "
 msgstr ""
+"You can create and edit custom pages to provide students with additional "
+"workshop content. For example, you can create pages for the grading policy, "
+"workshop slides, and a workshop calendar. "
 
 #: cms/templates/edit-tabs.html
 msgid "How do pages look to students in my course?"
@@ -20826,6 +20856,8 @@ msgid ""
 "Students see the default and custom pages at the top of your course and use "
 "these links to navigate."
 msgstr ""
+"Students see the default and custom pages at the top of your workshop and use "
+"these links to navigate."
 
 #: cms/templates/edit-tabs.html
 msgid "See an example"
@@ -20833,11 +20865,11 @@ msgstr ""
 
 #: cms/templates/edit-tabs.html
 msgid "Pages in Your Course"
-msgstr ""
+msgstr "Pages in Your Workshop"
 
 #: cms/templates/edit-tabs.html
 msgid "Preview of Pages in your course"
-msgstr ""
+msgstr "Preview of Pages in your workshop"
 
 #: cms/templates/edit-tabs.html
 msgid ""
@@ -20889,7 +20921,7 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Course Export"
-msgstr ""
+msgstr "Workshop Export"
 
 #: cms/templates/export.html
 msgid "About Exporting Libraries"
@@ -20916,6 +20948,10 @@ msgid ""
 "contains the course structure and content. You can also re-import courses "
 "that you've exported."
 msgstr ""
+"You can export courses and edit them outside of {studio_name}. The exported "
+"file is a .tar.gz file (that is, a .tar file compressed with GNU Zip) that "
+"contains the workshop structure and content. You can also re-import courses "
+"that you've exported."
 
 #: cms/templates/export.html
 msgid ""
@@ -20932,7 +20968,7 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Export My Course Content"
-msgstr ""
+msgstr "Export My Workshop Content"
 
 #: cms/templates/export.html
 msgid "Export Library Content"
@@ -20940,7 +20976,7 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Export Course Content"
-msgstr ""
+msgstr "Export Workshop Content"
 
 #: cms/templates/export.html
 msgid "Library Export Status"
@@ -20948,7 +20984,7 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Course Export Status"
-msgstr ""
+msgstr "Workshop Export Status"
 
 #: cms/templates/export.html
 msgid "Preparing"
@@ -20982,7 +21018,7 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Your exported course can now be downloaded"
-msgstr ""
+msgstr "Your exported workshop can now be downloaded"
 
 #: cms/templates/export.html
 msgid "Download Exported Library"
@@ -21003,11 +21039,11 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Course Content (all Sections, Sub-sections, and Units)"
-msgstr ""
+msgstr "Workshop Content (all Sections, Sub-sections, and Units)"
 
 #: cms/templates/export.html
 msgid "Course Structure"
-msgstr ""
+msgstr "Workshop Structure"
 
 #: cms/templates/export.html
 msgid "Individual Problems"
@@ -21015,15 +21051,15 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Course Assets"
-msgstr ""
+msgstr "Workshop Assets"
 
 #: cms/templates/export.html
 msgid "Course Settings"
-msgstr ""
+msgstr "Workshop Settings"
 
 #: cms/templates/export.html
 msgid "Data {em_start}not exported{em_end} with your course:"
-msgstr ""
+msgstr "Data {em_start}not exported{em_end} with your workshop:"
 
 #: cms/templates/export.html
 msgid "User Data"
@@ -21067,7 +21103,7 @@ msgstr ""
 
 #: cms/templates/export.html
 msgid "Why export a course?"
-msgstr ""
+msgstr "Why export a workshop?"
 
 #: cms/templates/export.html
 msgid ""
@@ -21076,6 +21112,10 @@ msgid ""
 "may want to create a copy of your course that you can later import into "
 "another course instance and customize."
 msgstr ""
+"You may want to edit the XML in your workshop directly, outside of "
+"{studio_name}. You may want to create a backup copy of your workshop. Or, you "
+"may want to create a copy of your workshop that you can later import into "
+"another workshop instance and customize."
 
 #: cms/templates/export.html
 msgid "What content is exported?"
@@ -21087,11 +21127,11 @@ msgstr ""
 
 #: cms/templates/export.html cms/templates/import.html
 msgid "Course content and structure"
-msgstr ""
+msgstr "Course content and structure"
 
 #: cms/templates/export.html cms/templates/import.html
 msgid "Course dates"
-msgstr ""
+msgstr "Workshop dates"
 
 #: cms/templates/export.html cms/templates/import.html
 msgid "Grading policy"
@@ -21127,14 +21167,17 @@ msgid ""
 "data includes the course.xml file, as well as subfolders that contain course"
 " content."
 msgstr ""
+"Use an archive program to extract the data from the .tar.gz file. Extracted "
+"data includes the workshop.xml file, as well as subfolders that contain workshop"
+" content."
 
 #: cms/templates/export.html
 msgid "Learn more about exporting a course"
-msgstr ""
+msgstr "Learn more about exporting a workshop"
 
 #: cms/templates/export_git.html
 msgid "Export Course to Git"
-msgstr ""
+msgstr "Export Workshop to Git"
 
 #: cms/templates/export_git.html cms/templates/widgets/header.html
 msgid "Export to Git"
@@ -21146,7 +21189,7 @@ msgstr ""
 
 #: cms/templates/export_git.html
 msgid "Use this to export your course to its git repository."
-msgstr ""
+msgstr "Use this to export your workshop to its git repository."
 
 #: cms/templates/export_git.html
 msgid ""
@@ -21154,15 +21197,19 @@ msgid ""
 "the contents of your course visible there to students if automatic git "
 "imports are configured."
 msgstr ""
+"This will then trigger an automatic update of the main LMS site and update "
+"the contents of your workshop visible there to students if automatic git "
+"imports are configured."
 
 #: cms/templates/export_git.html
 msgid "Export Course to Git:"
-msgstr ""
+msgstr "Export Workshop to Git:"
 
 #: cms/templates/export_git.html
 msgid ""
 "giturl must be defined in your course settings before you can export to git."
 msgstr ""
+"giturl must be defined in your workshop settings before you can export to git."
 
 #: cms/templates/export_git.html
 msgid "Export Failed"
@@ -21178,7 +21225,7 @@ msgstr "Your workshop:"
 
 #: cms/templates/export_git.html
 msgid "Course git url:"
-msgstr ""
+msgstr "Workshop git url:"
 
 #: cms/templates/group_configurations.html
 msgid "Experiment Group Configurations"
@@ -21195,12 +21242,18 @@ msgid ""
 "track in your course are automatically included in the corresponding "
 "enrollment track group."
 msgstr ""
+"Enrollment track groups allow you to offer different workshop content to "
+"learners in each enrollment track. Learners enrolled in each enrollment "
+"track in your workshop are automatically included in the corresponding "
+"enrollment track group."
 
 #: cms/templates/group_configurations.html
 msgid ""
 "On unit pages in the course outline, you can restrict access to components "
 "to learners based on their enrollment track."
 msgstr ""
+"On unit pages in the workshop outline, you can restrict access to components "
+"to learners based on their enrollment track."
 
 #: cms/templates/group_configurations.html
 msgid ""
@@ -21208,6 +21261,9 @@ msgid ""
 "view details of the course content that is designated for learners in the "
 "group."
 msgstr ""
+"You cannot edit enrollment track groups, but you can expand each group to "
+"view details of the workshop content that is designated for learners in the "
+"group."
 
 #: cms/templates/group_configurations.html
 msgid ""
@@ -21215,6 +21271,9 @@ msgid ""
 "create cohort-specific courseware. In other words, you can customize the "
 "content that particular cohorts see in your course."
 msgstr ""
+"If you have cohorts enabled in your workshop, you can use content groups to "
+"create cohort-specific workshopware. In other words, you can customize the "
+"content that particular cohorts see in your workshop."
 
 #: cms/templates/group_configurations.html
 msgid ""
@@ -21224,6 +21283,11 @@ msgid ""
 " Only learners in the cohorts that are associated with the specified content"
 " groups see the additional content."
 msgstr ""
+"Each content group that you create can be associated with one or more "
+"cohorts. In addition to making workshop content available to all learners, you"
+" can restrict access to some content to learners in specific content groups."
+" Only learners in the cohorts that are associated with the specified content"
+" groups see the additional content."
 
 #: cms/templates/group_configurations.html
 msgid ""
@@ -21242,6 +21306,11 @@ msgid ""
 "experiment. When you create a content experiment for a course, you select "
 "the group configuration to use."
 msgstr ""
+"Use experiment group configurations if you are conducting content "
+"experiments, also known as A/B testing, in your workshop. Experiment group "
+"configurations define how many groups of learners are in a content "
+"experiment. When you create a content experiment for a workshop, you select "
+"the group configuration to use."
 
 #: cms/templates/group_configurations.html
 msgid ""
@@ -21265,6 +21334,8 @@ msgid ""
 "{studio_name} helps manage your online courses, so you can focus on teaching"
 " them"
 msgstr ""
+"{studio_name} helps manage your online workshops, so you can focus on teaching"
+" them"
 
 #: cms/templates/howitworks.html
 msgid "{studio_name}'s Many Features"
@@ -21272,7 +21343,7 @@ msgstr ""
 
 #: cms/templates/howitworks.html
 msgid "{studio_name} Helps You Keep Your Courses Organized"
-msgstr ""
+msgstr "{studio_name} Helps You Keep Your Workshops Organized"
 
 #: cms/templates/howitworks.html
 msgid "Enlarge image"
@@ -21280,7 +21351,7 @@ msgstr ""
 
 #: cms/templates/howitworks.html
 msgid "Keeping Your Course Organized"
-msgstr ""
+msgstr "Keeping Your Workshop Organized"
 
 #: cms/templates/howitworks.html
 msgid ""
@@ -21288,6 +21359,9 @@ msgid ""
 "{strong_start}Outline{strong_end} editor, providing a simple hierarchy and "
 "easy drag and drop to help you and your students stay organized."
 msgstr ""
+"The backbone of your workshop is how it is organized. {studio_name} offers an "
+"{strong_start}Outline{strong_end} editor, providing a simple hierarchy and "
+"easy drag and drop to help you and your students stay organized."
 
 #: cms/templates/howitworks.html
 msgid "Simple Organization For Content"
@@ -21377,6 +21451,10 @@ msgid ""
 "incremental release when it makes sense. And with co-authors, you can have a"
 " whole team building a course, together."
 msgstr ""
+"{studio_name} works like web applications you already know, yet understands "
+"how you build curriculum. Instant publishing to the web when you want it, "
+"incremental release when it makes sense. And with co-authors, you can have a"
+" whole team building a workshop, together."
 
 #: cms/templates/howitworks.html
 msgid "Instant Changes"
@@ -21398,6 +21476,9 @@ msgid ""
 " it to go live and {studio_name} takes care of the rest. Build your course "
 "incrementally."
 msgstr ""
+"When you've finished a {strong_start}section{strong_end}, pick when you want"
+" it to go live and {studio_name} takes care of the rest. Build your workshop "
+"incrementally."
 
 #: cms/templates/howitworks.html
 msgid "Work in Teams"
@@ -21408,6 +21489,8 @@ msgid ""
 "Co-authors have full access to all the same authoring tools. Make your "
 "course better through a team effort."
 msgstr ""
+"Co-authors have full access to all the same authoring tools. Make your "
+"workshop better through a team effort."
 
 #: cms/templates/howitworks.html
 msgid "Sign Up for {studio_name} Today!"
@@ -21415,7 +21498,7 @@ msgstr ""
 
 #: cms/templates/howitworks.html
 msgid "Sign Up & Start Making Your {platform_name} Course"
-msgstr ""
+msgstr "Sign Up & Start Making Your {platform_name} Workshop"
 
 #: cms/templates/howitworks.html
 msgid "Already have a {studio_name} Account? Sign In"
@@ -21423,13 +21506,15 @@ msgstr ""
 
 #: cms/templates/howitworks.html
 msgid "Outlining Your Course"
-msgstr ""
+msgstr "Outlining Your Workshop"
 
 #: cms/templates/howitworks.html
 msgid ""
 "Simple two-level outline to organize your course. Drag and drop, and see "
 "your course at a glance."
 msgstr ""
+"Simple two-level outline to organize your course. Drag and drop, and see "
+"your workshop at a glance."
 
 #: cms/templates/howitworks.html
 msgid "More than Just Lectures"
@@ -21467,7 +21552,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Course Import"
-msgstr ""
+msgstr "Workshop Import"
 
 #: cms/templates/import.html
 msgid ""
@@ -21501,6 +21586,11 @@ msgid ""
 "recommend that you export the current course, so that you have a backup copy"
 " of it."
 msgstr ""
+"Be sure you want to import a workshop before continuing. The contents of the "
+"imported workshop will replace the contents of the existing workshop. "
+"{em_start}You cannot undo a workshop import{em_end}. Before you proceed, we "
+"recommend that you export the current workshop, so that you have a backup copy"
+" of it."
 
 #: cms/templates/import.html
 msgid ""
@@ -21508,6 +21598,9 @@ msgid ""
 "compressed with GNU Zip). This .tar.gz file must contain a course.xml file. "
 "It may also contain other files."
 msgstr ""
+"The workshop that you import must be in a .tar.gz file (that is, a .tar file "
+"compressed with GNU Zip). This .tar.gz file must contain a workshop.xml file. "
+"It may also contain other files."
 
 #: cms/templates/import.html
 msgid ""
@@ -21516,6 +21609,10 @@ msgid ""
 "completed. We recommend, however, that you don't make important changes to "
 "your course until the import operation has completed."
 msgstr ""
+"The import process has five stages. During the first two stages, you must "
+"stay on this page. You can leave this page after the Unpacking stage has "
+"completed. We recommend, however, that you don't make important changes to "
+"your workshop until the import operation has completed."
 
 #: cms/templates/import.html
 msgid "Select a .tar.gz File to Replace Your Library Content"
@@ -21523,7 +21620,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Select a .tar.gz File to Replace Your Course Content"
-msgstr ""
+msgstr "Select a .tar.gz File to Replace Your Workshop Content"
 
 #: cms/templates/import.html
 msgid "Choose a File to Import"
@@ -21539,7 +21636,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Replace my course with the selected file"
-msgstr ""
+msgstr "Replace my workshop with the selected file"
 
 #: cms/templates/import.html
 msgid "Library Import Status"
@@ -21547,7 +21644,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Course Import Status"
-msgstr ""
+msgstr "Workshop Import Status"
 
 #: cms/templates/import.html
 msgid "Transferring your file to our servers"
@@ -21578,7 +21675,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Updating Course"
-msgstr ""
+msgstr "Updating Workshop"
 
 #: cms/templates/import.html
 msgid ""
@@ -21591,6 +21688,8 @@ msgid ""
 "Integrating your imported content into this course. This process might take "
 "longer with larger courses."
 msgstr ""
+"Integrating your imported content into this workshop. This process might take "
+"longer with larger workshops."
 
 #: cms/templates/import.html
 msgid "Your imported content has now been integrated into this library"
@@ -21598,7 +21697,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Your imported content has now been integrated into this course"
-msgstr ""
+msgstr "Your imported content has now been integrated into this workshop"
 
 #: cms/templates/import.html
 msgid "View Updated Library"
@@ -21630,6 +21729,10 @@ msgid ""
 "updated content. You must manually refresh the randomized content blocks to "
 "bring them up to date with the latest library content."
 msgstr ""
+"If you change and import a library that is referenced by randomized content "
+"blocks in one or more workshops, those workshops do not automatically use the "
+"updated content. You must manually refresh the randomized content blocks to "
+"bring them up to date with the latest library content."
 
 #: cms/templates/import.html
 msgid "Learn more about importing a library"
@@ -21637,7 +21740,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Why import a course?"
-msgstr ""
+msgstr "Why import a workshop?"
 
 #: cms/templates/import.html
 msgid ""
@@ -21645,6 +21748,9 @@ msgid ""
 "existing course altogether. Or, you may have developed a course outside "
 "{studio_name}."
 msgstr ""
+"You may want to run a new version of an existing workshop, or replace an "
+"existing workshop altogether. Or, you may have developed a workshop outside "
+"{studio_name}."
 
 #: cms/templates/import.html
 msgid "What content is imported?"
@@ -21660,7 +21766,7 @@ msgstr ""
 
 #: cms/templates/import.html
 msgid "Warning: Importing while a course is running"
-msgstr ""
+msgstr "Warning: Importing while a workshop is running"
 
 #: cms/templates/import.html
 msgid ""
@@ -21669,6 +21775,10 @@ msgid ""
 "associated with those Problem components may be lost. This data includes "
 "students' problem scores."
 msgstr ""
+"If you perform an import while your workshop is running, and you change the "
+"URL names (or url_name nodes) of any Problem components, the student data "
+"associated with those Problem components may be lost. This data includes "
+"students' problem scores."
 
 #: cms/templates/import.html
 msgid "Learn more about importing a course"
@@ -21684,7 +21794,7 @@ msgstr "New Workshop"
 
 #: cms/templates/index.html
 msgid "Email staff to create course"
-msgstr ""
+msgstr "Email staff to create workshop"
 
 #: cms/templates/index.html
 msgid "New Library"
@@ -21707,6 +21817,8 @@ msgid ""
 "The public display name for your course. This cannot be changed, but you can"
 " set a different display name in Advanced Settings later."
 msgstr ""
+"The public display name for your workshop. This cannot be changed, but you can"
+" set a different display name in Advanced Settings later."
 
 #: cms/templates/index.html
 msgid ""
@@ -21715,6 +21827,10 @@ msgid ""
 "changed, but you can set a different display name in Advanced Settings "
 "later."
 msgstr ""
+"The name of the organization sponsoring the workshop. {strong_start}Note: The "
+"organization name is part of the workshop URL.{strong_end} This cannot be "
+"changed, but you can set a different display name in Advanced Settings "
+"later."
 
 #: cms/templates/index.html
 msgid ""
@@ -21722,6 +21838,9 @@ msgid ""
 "{strong_start}Note: This is part of your course URL, so no spaces or special"
 " characters are allowed and it cannot be changed.{strong_end}"
 msgstr ""
+"The unique number that identifies your workshop within your organization. "
+"{strong_start}Note: This is part of your workshop URL, so no spaces or special"
+" characters are allowed and it cannot be changed.{strong_end}"
 
 #: cms/templates/index.html
 msgid ""
@@ -21729,6 +21848,9 @@ msgid ""
 "your course URL, so no spaces or special characters are allowed and it "
 "cannot be changed.{strong_end}"
 msgstr ""
+"The term in which your workshop will run. {strong_start}Note: This is part of "
+"your workshop URL, so no spaces or special characters are allowed and it "
+"cannot be changed.{strong_end}"
 
 #: cms/templates/index.html
 msgid "Create"
@@ -21791,7 +21913,7 @@ msgstr ""
 
 #: cms/templates/index.html
 msgid "Show all courses in organization:"
-msgstr ""
+msgstr "Show all workshops in organization:"
 
 #: cms/templates/index.html
 msgid "For example, MITx"
@@ -21803,7 +21925,7 @@ msgstr "Workshops Being Processed"
 
 #: cms/templates/index.html
 msgid "This course run is currently being created."
-msgstr ""
+msgstr "This workshop run is currently being created."
 
 #. Translators: This is a status message, used to inform the user of
 #. what the system is doing. This status means that the user has
@@ -21820,6 +21942,9 @@ msgid ""
 "this page or {link_start}refresh it{link_end} to update the course list. The"
 " new course will need some manual configuration."
 msgstr ""
+"The new workshop will be added to your workshop list in 5-10 minutes. Return to "
+"this page or {link_start}refresh it{link_end} to update the workshop list. The"
+" new workshop will need some manual configuration."
 
 #. Translators: This is a status message for the course re-runs feature.
 #. When a course admin indicates that a course should be re-run, the system
@@ -21839,6 +21964,9 @@ msgid ""
 "the original course to try the re-run again, or contact your PM for "
 "assistance."
 msgstr ""
+"A system error occurred while your workshop was being processed. Please go to "
+"the original workshop to try the re-run again, or contact your PM for "
+"assistance."
 
 #: cms/templates/index.html
 msgid "Archived Courses"
@@ -21850,25 +21978,27 @@ msgstr ""
 
 #: cms/templates/index.html
 msgid "Are you staff on an existing {studio_name} course?"
-msgstr ""
+msgstr "Are you staff on an existing {studio_name} workshop?"
 
 #: cms/templates/index.html
 msgid ""
 "The course creator must give you access to the course. Contact the course "
 "creator or administrator for the course you are helping to author."
 msgstr ""
+"The workshop creator must give you access to the workshop. Contact the workshop "
+"creator or administrator for the workshop you are helping to author."
 
 #: cms/templates/index.html
 msgid "Create Your First Course"
-msgstr ""
+msgstr "Create Your First Workshop"
 
 #: cms/templates/index.html
 msgid "Your new course is just a click away!"
-msgstr ""
+msgstr "Your new workshop is just a click away!"
 
 #: cms/templates/index.html
 msgid "Becoming a Course Creator in {studio_name}"
-msgstr ""
+msgstr "Becoming a Workshop Creator in {studio_name}"
 
 #: cms/templates/index.html
 msgid ""
@@ -21878,10 +22008,15 @@ msgid ""
 "team will evaluate your request and provide you feedback within 24 hours "
 "during the work week."
 msgstr ""
+"{studio_name} is a hosted solution for our xConsortium partners and selected"
+" guests. Workshops for which you are a team member appear above for you to "
+"edit, while workshop creator privileges are granted by {platform_name}. Our "
+"team will evaluate your request and provide you feedback within 24 hours "
+"during the work week."
 
 #: cms/templates/index.html
 msgid "Your Course Creator Request Status:"
-msgstr ""
+msgstr "Your Workshop Creator Request Status:"
 
 #: cms/templates/index.html
 msgid "Request the Ability to Create Courses"
@@ -21898,10 +22033,14 @@ msgid ""
 "edit, while course creator privileges are granted by {platform_name}. Our "
 "team is has completed evaluating your request."
 msgstr ""
+"{studio_name} is a hosted solution for our xConsortium partners and selected"
+" guests. Workshops for which you are a team member appear above for you to "
+"edit, while workshop creator privileges are granted by {platform_name}. Our "
+"team is has completed evaluating your request."
 
 #: cms/templates/index.html
 msgid "Your Course Creator request is:"
-msgstr ""
+msgstr "Your Workshop Creator request is:"
 
 #: cms/templates/index.html
 msgid ""
@@ -21916,6 +22055,10 @@ msgid ""
 "edit, while course creator privileges are granted by {platform_name}. Our "
 "team is currently  evaluating your request."
 msgstr ""
+"{studio_name} is a hosted solution for our xConsortium partners and selected"
+" guests. Workshops for which you are a team member appear above for you to "
+"edit, while workshop creator privileges are granted by {platform_name}. Our "
+"team is currently  evaluating your request."
 
 #: cms/templates/index.html
 msgid ""
@@ -21942,6 +22085,8 @@ msgid ""
 "Libraries hold a pool of components that can be re-used across multiple "
 "courses. Create your first library with the click of a button!"
 msgstr ""
+"Libraries hold a pool of components that can be re-used across multiple "
+"workshops. Create your first library with the click of a button!"
 
 #: cms/templates/index.html
 msgid "New to {studio_name}?"
@@ -21961,25 +22106,31 @@ msgstr ""
 
 #: cms/templates/index.html
 msgid "Can I create courses in {studio_name}?"
-msgstr ""
+msgstr "Can I create workshops in {studio_name}?"
 
 #: cms/templates/index.html
 msgid ""
 "In order to create courses in {studio_name}, you must {link_start}contact "
 "{platform_name} staff to help you create a course{link_end}."
 msgstr ""
+"In order to create workshops in {studio_name}, you must {link_start}contact "
+"{platform_name} staff to help you create a workshop{link_end}."
 
 #: cms/templates/index.html
 msgid ""
 "In order to create courses in {studio_name}, you must have course creator "
 "privileges to create your own course."
 msgstr ""
+"In order to create workshops in {studio_name}, you must have workshop creator "
+"privileges to create your own workshop."
 
 #: cms/templates/index.html
 msgid ""
 "Your request to author courses in {studio_name} has been denied. Please "
 "{link_start}contact {platform_name} Staff with further questions{link_end}."
 msgstr ""
+"Your request to author workshops in {studio_name} has been denied. Please "
+"{link_start}contact {platform_name} Staff with further questions{link_end}."
 
 #: cms/templates/index.html
 msgid "Thanks for signing up, {name}!"
@@ -22024,6 +22175,8 @@ msgid ""
 "Add components to your library for use in courses, using Add New Component "
 "at the bottom of this page."
 msgstr ""
+"Add components to your library for use in workshops, using Add New Component "
+"at the bottom of this page."
 
 #: cms/templates/library.html
 msgid ""
@@ -22034,7 +22187,7 @@ msgstr ""
 
 #: cms/templates/library.html
 msgid "Using library content in courses"
-msgstr "Using library content in courses"
+msgstr "Using library content in workshops"
 
 #: cms/templates/library.html
 msgid ""
@@ -22045,6 +22198,12 @@ msgid ""
 "this library as the source library, and specify the number of problems to be"
 " randomly selected and displayed to each student."
 msgstr ""
+"Use library content in workshops by adding the "
+"{em_start}library_content{em_end} policy key to the Advanced Module List in "
+"the workshop's Advanced Settings, then adding a Randomized Content Block to "
+"your courseware. In the settings for each Randomized Content Block, select "
+"this library as the source library, and specify the number of problems to be"
+" randomly selected and displayed to each student."
 
 #: cms/templates/library.html
 msgid "Learn more about content libraries"
@@ -22060,7 +22219,7 @@ msgstr ""
 
 #: cms/templates/manage_users.html
 msgid "Add a User to Your Course's Team"
-msgstr ""
+msgstr "Add a User to Your Workshop's Team"
 
 #: cms/templates/manage_users.html cms/templates/manage_users_lib.html
 msgid "New Team Member Information"
@@ -22080,13 +22239,15 @@ msgstr ""
 
 #: cms/templates/manage_users.html
 msgid "Add Team Members to This Course"
-msgstr ""
+msgstr "Add Team Members to This Workshop"
 
 #: cms/templates/manage_users.html
 msgid ""
 "Adding team members makes course authoring collaborative. Users must be "
 "signed up for {studio_name} and have an active account."
 msgstr ""
+"Adding team members makes workshop authoring collaborative. Users must be "
+"signed up for {studio_name} and have an active account."
 
 #: cms/templates/manage_users.html
 msgid "Add a New Team Member"
@@ -22101,18 +22262,24 @@ msgid ""
 "Course team members with the Staff role are course co-authors. They have "
 "full writing and editing privileges on all course content."
 msgstr ""
+"Workshop team members with the Staff role are workshop co-authors. They have "
+"full writing and editing privileges on all workshop content."
 
 #: cms/templates/manage_users.html
 msgid ""
 "Admins are course team members who can add and remove other course team "
 "members."
 msgstr ""
+"Admins are workshop team members who can add and remove other workshop team "
+"members."
 
 #: cms/templates/manage_users.html
 msgid ""
 "All course team members can access content in Studio, the LMS, and Insights,"
 " but are not automatically enrolled in the course."
 msgstr ""
+"All workshop team members can access content in Studio, the LMS, and Insights,"
+" but are not automatically enrolled in the workshop."
 
 #: cms/templates/manage_users.html
 msgid "Transferring Ownership"
@@ -22125,6 +22292,10 @@ msgid ""
 " make another user the Admin, then ask that user to remove you from the "
 "Course Team list."
 msgstr ""
+"Every workshop must have an Admin. If you are the Admin and you want to "
+"transfer ownership of the workshop, click <strong>Add admin access</strong> to"
+" make another user the Admin, then ask that user to remove you from the "
+"Workshop Team list."
 
 #: cms/templates/manage_users_lib.html
 msgid "Library User Access"
@@ -22151,6 +22322,8 @@ msgid ""
 "Grant other members of your course team access to this library. New library "
 "users must have an active {studio_name} account."
 msgstr ""
+"Grant other members of your workshop team access to this library. New library "
+"users must have an active {studio_name} account."
 
 #: cms/templates/manage_users_lib.html
 msgid "Add a New User"
@@ -22169,6 +22342,8 @@ msgid ""
 "Library Users can view library content and can reference or use library "
 "components in their courses, but they cannot edit the contents of a library."
 msgstr ""
+"Library Users can view library content and can reference or use library "
+"components in their workshops, but they cannot edit the contents of a library."
 
 #: cms/templates/manage_users_lib.html
 msgid ""
@@ -22200,6 +22375,8 @@ msgid ""
 "Ready to start creating online courses? Sign up below and start creating "
 "your first {platform_name} course today."
 msgstr ""
+"Ready to start creating online workshops? Sign up below and start creating "
+"your first {platform_name} workshop today."
 
 #: cms/templates/register.html
 msgid "Required Information to Sign Up for {studio_name}"
@@ -22210,6 +22387,8 @@ msgid ""
 "This will be used in public discussions with your courses and in our edX101 "
 "support forums"
 msgstr ""
+"This will be used in public discussions with your workshops and in our edX101 "
+"support forums"
 
 #: cms/templates/register.html
 msgid "Your Location"
@@ -22242,11 +22421,16 @@ msgid ""
 "members, teaching assistants and course staff, and members of instructional "
 "technology groups."
 msgstr ""
+"{studio_name} is for anyone that wants to create online workshops that "
+"leverage the global {platform_name} platform. Our users are often faculty "
+"members, teaching assistants and workshop staff, and members of instructional "
+"technology groups."
 
 #: cms/templates/register.html
 msgid ""
 "How technically savvy do I need to be to create courses in {studio_name}?"
 msgstr ""
+"How technically savvy do I need to be to create workshops in {studio_name}?"
 
 #: cms/templates/register.html
 msgid ""
@@ -22259,7 +22443,7 @@ msgstr ""
 
 #: cms/templates/register.html
 msgid "I've never authored a course online before. Is there help?"
-msgstr ""
+msgstr "I've never authored a workshop online before. Is there help?"
 
 #: cms/templates/register.html
 msgid ""
@@ -22268,6 +22452,10 @@ msgid ""
 "running an online course. Additionally, we're always here to help, just drop"
 " us a note."
 msgstr ""
+"Absolutely. We have created an online workshop, edX101, that describes some "
+"best practices: from filming video, creating exercises, to the basics of "
+"running an online workshop. Additionally, we're always here to help, just drop"
+" us a note."
 
 #: cms/templates/settings.html
 msgid "Schedule & Details Settings"
@@ -22283,7 +22471,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "The nuts and bolts of your course"
-msgstr ""
+msgstr "The nuts and bolts of your workshop"
 
 #: cms/templates/settings.html
 msgid "This field is disabled: this information cannot be changed."
@@ -22291,7 +22479,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Course Summary Page"
-msgstr ""
+msgstr "Workshop Summary Page"
 
 #: cms/templates/settings.html
 msgid "(for student enrollment and access)"
@@ -22307,6 +22495,9 @@ msgid ""
 "for enrollment. Please navigate to this course at {link_for_about_page} to "
 "enroll."
 msgstr ""
+"The workshop \"{course_display_name}\", provided by {platform_name}, is open "
+"for enrollment. Please navigate to this workshop at {link_for_about_page} to "
+"enroll."
 
 #: cms/templates/settings.html
 msgid "Send a note to students via email"
@@ -22318,7 +22509,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Promoting Your Course with {platform_name}"
-msgstr ""
+msgstr "Promoting Your Workshop with {platform_name}"
 
 #: cms/templates/settings.html
 msgid ""
@@ -22326,20 +22517,25 @@ msgid ""
 "announced. To provide content for the page and preview it, follow the "
 "instructions provided by your Program Manager."
 msgstr ""
+"Your workshop summary page will not be viewable until your workshop has been "
+"announced. To provide content for the page and preview it, follow the "
+"instructions provided by your Program Manager."
 
 #: cms/templates/settings.html
 msgid ""
 "Please note that changes here may take up to a business day to appear on "
 "your course summary page."
 msgstr ""
+"Please note that changes here may take up to a business day to appear on "
+"your workshop summary page."
 
 #: cms/templates/settings.html
 msgid "Course Credit Requirements"
-msgstr ""
+msgstr "Workshop Credit Requirements"
 
 #: cms/templates/settings.html
 msgid "Steps required to earn course credit"
-msgstr ""
+msgstr "Steps required to earn workshop credit"
 
 #: cms/templates/settings.html
 msgid "Minimum Grade"
@@ -22359,7 +22555,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "In-Course Reverification {number}"
-msgstr ""
+msgstr "In-Workshop Reverification {number}"
 
 #: cms/templates/settings.html
 msgid "Course Pacing"
@@ -22367,7 +22563,7 @@ msgstr "Workshop Pacing"
 
 #: cms/templates/settings.html
 msgid "Set the pacing for this course"
-msgstr ""
+msgstr "Set the pacing for this workshop"
 
 #: cms/templates/settings.html
 msgid "Instructor-Paced"
@@ -22379,6 +22575,9 @@ msgid ""
 "You can configure release dates for course content and due dates for "
 "assignments."
 msgstr ""
+"Instructor-paced workshops progress at the pace that the workshop author sets. "
+"You can configure release dates for workshop content and due dates for "
+"assignments."
 
 #: cms/templates/settings.html
 msgid "Self-Paced"
@@ -22390,6 +22589,9 @@ msgid ""
 " for assignments. Learners can complete course material at any time before "
 "the course end date."
 msgstr ""
+"Self-paced workshops do not have release dates for workshop content or due dates"
+" for assignments. Learners can complete workshop material at any time before "
+"the workshop end date."
 
 #: cms/templates/settings.html
 msgid "Course Schedule"
@@ -22397,7 +22599,7 @@ msgstr "Workshop Schedule"
 
 #: cms/templates/settings.html
 msgid "Dates that control when your course can be viewed"
-msgstr ""
+msgstr "Dates that control when your workshop can be viewed"
 
 #: cms/templates/settings.html
 msgid "First day the course begins"
@@ -22425,7 +22627,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "By default, 48 hours after course end date"
-msgstr ""
+msgstr "By default, 48 hours after workshop end date"
 
 #: cms/templates/settings.html
 msgid "Enrollment Start Date"
@@ -22473,7 +22675,7 @@ msgstr "Workshop Details"
 
 #: cms/templates/settings.html
 msgid "Provide useful information about your course"
-msgstr ""
+msgstr "Provide useful information about your workshop"
 
 #: cms/templates/settings.html
 msgid ""
@@ -22481,6 +22683,9 @@ msgid ""
 " that are taught in a specific language. It is also used to localize the "
 "'From:' field in bulk emails."
 msgstr ""
+"Identify the workshop language here. This is used to assist users find workshops"
+" that are taught in a specific language. It is also used to localize the "
+"'From:' field in bulk emails."
 
 #: cms/templates/settings.html
 msgid "Introducing Your Course"
@@ -22496,7 +22701,7 @@ msgstr "Workshop Title"
 
 #: cms/templates/settings.html
 msgid "Displayed as title on the course details page. Limit to 50 characters."
-msgstr ""
+msgstr "Displayed as title on the workshop details page. Limit to 50 characters."
 
 #: cms/templates/settings.html
 msgid "Course Subtitle"
@@ -22506,6 +22711,7 @@ msgstr "Workshop Subtitle"
 msgid ""
 "Displayed as subtitle on the course details page. Limit to 150 characters."
 msgstr ""
+"Displayed as subtitle on the workshop details page. Limit to 150 characters."
 
 #: cms/templates/settings.html
 msgid "Course Duration"
@@ -22513,7 +22719,7 @@ msgstr "Workshop Duration"
 
 #: cms/templates/settings.html
 msgid "Displayed on the course details page. Limit to 50 characters."
-msgstr ""
+msgstr "Displayed on the workshop details page. Limit to 50 characters."
 
 #: cms/templates/settings.html
 msgid "Course Description"
@@ -22532,6 +22738,8 @@ msgid ""
 "Appears on the course catalog page when students roll over the course name. "
 "Limit to ~150 characters"
 msgstr ""
+"Appears on the workshop catalog page when students roll over the workshop name. "
+"Limit to ~150 characters"
 
 #: cms/templates/settings.html
 msgid "Course Overview"
@@ -22546,6 +22754,8 @@ msgid ""
 "Introductions, prerequisites, FAQs that are used on {a_link_start}your "
 "course summary page{a_link_end} (formatted in HTML)"
 msgstr ""
+"Introductions, prerequisites, FAQs that are used on {a_link_start}your "
+"workshop summary page{a_link_end} (formatted in HTML)"
 
 #: cms/templates/settings.html
 msgid "Course About Sidebar HTML"
@@ -22556,6 +22766,8 @@ msgid ""
 "Custom sidebar content for {a_link_start}your course summary "
 "page{a_link_end} (formatted in HTML)"
 msgstr ""
+"Custom sidebar content for {a_link_start}your workshop summary "
+"page{a_link_end} (formatted in HTML)"
 
 #: cms/templates/settings.html
 msgid "Course Card Image"
@@ -22572,18 +22784,22 @@ msgid ""
 "Your course currently does not have an image. Please upload one (JPEG or PNG"
 " format, and minimum suggested dimensions are 375px wide by 200px tall)"
 msgstr ""
+"Your workshop currently does not have an image. Please upload one (JPEG or PNG"
+" format, and minimum suggested dimensions are 375px wide by 200px tall)"
 
 #. Translators: This is the placeholder text for a field that requests the URL
 #. for a course image
 #: cms/templates/settings.html
 msgid "Your course image URL"
-msgstr ""
+msgstr "Your workshop image URL"
 
 #: cms/templates/settings.html
 msgid ""
 "Please provide a valid path and name to your course image (Note: only JPEG "
 "or PNG format supported)"
 msgstr ""
+"Please provide a valid path and name to your workshop image (Note: only JPEG "
+"or PNG format supported)"
 
 #: cms/templates/settings.html
 msgid "Upload Course Card Image"
@@ -22594,6 +22810,8 @@ msgid ""
 "Your course currently does not have an image. Please upload one (JPEG or PNG"
 " format, and minimum suggested dimensions are 1440px wide by 400px tall)"
 msgstr ""
+"Your workshop currently does not have an image. Please upload one (JPEG or PNG"
+" format, and minimum suggested dimensions are 1440px wide by 400px tall)"
 
 #. Translators: This is the placeholder text for a field that requests the URL
 #. for a course banner image
@@ -22609,7 +22827,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Upload Course Banner Image"
-msgstr ""
+msgstr "Upload Workshop Banner Image"
 
 #: cms/templates/settings.html
 msgid "Video Thumbnail Image"
@@ -22621,6 +22839,9 @@ msgid ""
 "one (JPEG or PNG format, and minimum suggested dimensions are 375px wide by "
 "200px tall)"
 msgstr ""
+"Your workshop currently does not have a video thumbnail image. Please upload "
+"one (JPEG or PNG format, and minimum suggested dimensions are 375px wide by "
+"200px tall)"
 
 #. Translators: This is the placeholder text for a field that requests the URL
 #. for a course video thumbnail image
@@ -22662,7 +22883,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Add the learning outcomes for this course"
-msgstr ""
+msgstr "Add the learning outcomes for this workshop"
 
 #: cms/templates/settings.html
 msgid "Add Learning Outcome"
@@ -22670,7 +22891,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Add details about the instructors for this course"
-msgstr ""
+msgstr "Add details about the instructors for this workshop"
 
 #: cms/templates/settings.html
 msgid "Add Instructor"
@@ -22678,7 +22899,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Expectations of the students taking this course"
-msgstr ""
+msgstr "Expectations of the students taking this workshop"
 
 #: cms/templates/settings.html
 msgid "Hours of Effort per Week"
@@ -22713,6 +22934,8 @@ msgid ""
 "You can now view and author your course entrance exam from the "
 "{link_start}Course Outline{link_end}."
 msgstr ""
+"You can now view and author your workshop entrance exam from the "
+"{link_start}Workshop Outline{link_end}."
 
 #: cms/templates/settings.html
 msgid "Grade Requirements"
@@ -22730,7 +22953,7 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Course Content License"
-msgstr ""
+msgstr "Workshop Content License"
 
 #. Translators: At the course settings, the editor is able to select the
 #. default course content license.
@@ -22751,6 +22974,8 @@ msgid ""
 "Your course's schedule determines when students can enroll in and begin a "
 "course."
 msgstr ""
+"Your workshop's schedule determines when students can enroll in and begin a "
+"workshop."
 
 #: cms/templates/settings.html
 msgid ""
@@ -22759,6 +22984,10 @@ msgid ""
 "video, and estimated time requirements. Students use About pages to choose "
 "new courses to take."
 msgstr ""
+"Other information from this page appears on the About page for your workshop. "
+"This information includes the workshop overview, workshop image, introduction "
+"video, and estimated time requirements. Students use About pages to choose "
+"new workshops to take."
 
 #: cms/templates/settings_advanced.html
 msgid "Your policy changes have been saved."
@@ -22792,6 +23021,9 @@ msgid ""
 "can edit manual policies, which are JSON-based key and value pairs that "
 "control specific course settings."
 msgstr ""
+"Advanced settings control specific workshop functionality. On this page, you "
+"can edit manual policies, which are JSON-based key and value pairs that "
+"control specific workshop settings."
 
 #: cms/templates/settings_advanced.html
 msgid ""
@@ -22829,7 +23061,7 @@ msgstr ""
 
 #: cms/templates/settings_graders.html
 msgid "Settings for course credit eligibility"
-msgstr ""
+msgstr "Settings for workshop credit eligibility"
 
 #: cms/templates/settings_graders.html
 msgid "Minimum Credit-Eligible Grade:"
@@ -22837,7 +23069,7 @@ msgstr ""
 
 #: cms/templates/settings_graders.html
 msgid "Must be greater than or equal to the course passing grade"
-msgstr ""
+msgstr "Must be greater than or equal to the workshop passing grade"
 
 #: cms/templates/settings_graders.html
 msgid "Grading Rules &amp; Policies"
@@ -22877,12 +23109,17 @@ msgid ""
 "course is pass/fail or graded by letter, and to establish the thresholds for"
 " each grade."
 msgstr ""
+"You can use the slider under Overall Grade Range to specify whether your "
+"workshop is pass/fail or graded by letter, and to establish the thresholds for"
+" each grade."
 
 #: cms/templates/settings_graders.html
 msgid ""
 "You can specify whether your course offers students a grace period for late "
 "assignments."
 msgstr ""
+"You can specify whether your workshop offers students a grace period for late "
+"assignments."
 
 #: cms/templates/settings_graders.html
 msgid ""
@@ -22948,7 +23185,7 @@ msgstr ""
 
 #: cms/templates/videos_index.html
 msgid "Course Video Settings"
-msgstr ""
+msgstr "Workshop Video Settings"
 
 #: cms/templates/videos_index_pagination.html
 msgid "Changing.."
@@ -23055,23 +23292,27 @@ msgstr ""
 
 #: cms/templates/emails/course_creator_admin_subject.txt
 msgid "{email} has requested {studio_name} course creator privileges on edge"
-msgstr ""
+msgstr "{email} has requested {studio_name} workshop creator privileges on edge"
 
 #: cms/templates/emails/course_creator_admin_user_pending.txt
 msgid ""
 "User '{user}' with e-mail {email} has requested {studio_name} course creator"
 " privileges on edge."
 msgstr ""
+"User '{user}' with e-mail {email} has requested {studio_name} workshop creator"
+" privileges on edge."
 
 #: cms/templates/emails/course_creator_admin_user_pending.txt
 msgid "To grant or deny this request, use the course creator admin table."
-msgstr ""
+msgstr "To grant or deny this request, use the workshop creator admin table."
 
 #: cms/templates/emails/course_creator_denied.txt
 msgid ""
 "Your request for course creation rights to {studio_name} have been denied. "
 "If you believe this was in error, please contact {email}"
 msgstr ""
+"Your request for workshop creation rights to {studio_name} have been denied. "
+"If you believe this was in error, please contact {email}"
 
 #: cms/templates/emails/course_creator_granted.txt
 msgid ""
@@ -23079,16 +23320,21 @@ msgid ""
 "\n"
 "{url}"
 msgstr ""
+"Your request for course creation rights to {studio_name} have been granted. To create your first workshop, visit\n"
+"\n"
+"{url}"
 
 #: cms/templates/emails/course_creator_revoked.txt
 msgid ""
 "Your course creation rights to {studio_name} have been revoked. If you "
 "believe this was in error, please contact {email}"
 msgstr ""
+"Your workshop creation rights to {studio_name} have been revoked. If you "
+"believe this was in error, please contact {email}"
 
 #: cms/templates/emails/course_creator_subject.txt
 msgid "Your course creator status for {studio_name}"
-msgstr ""
+msgstr "Your workshop creator status for {studio_name}"
 
 #: cms/templates/emails/user_task_complete_email.txt
 msgid ""
@@ -23128,11 +23374,11 @@ msgstr ""
 
 #: cms/templates/maintenance/_force_publish_course.html
 msgid "Required data to force publish course."
-msgstr ""
+msgstr "Required data to force publish workshop."
 
 #: cms/templates/maintenance/_force_publish_course.html
 msgid "course-v1:edX+DemoX+Demo_Course"
-msgstr ""
+msgstr "workshop-v1:edX+DemoX+Demo_Workshop"
 
 #: cms/templates/maintenance/_force_publish_course.html
 msgid "Reset values"
@@ -23152,7 +23398,7 @@ msgstr ""
 
 #: cms/templates/registration/activation_complete.html
 msgid "Visit your {link_start}dashboard{link_end} to see your courses."
-msgstr ""
+msgstr "Visit your {link_start}dashboard{link_end} to see your workshops."
 
 #: cms/templates/registration/activation_complete.html
 msgid "You can now {link_start}sign in{link_end}."
@@ -23197,7 +23443,7 @@ msgstr "Current Workshop:"
 
 #: cms/templates/widgets/header.html
 msgid "Course Navigation"
-msgstr ""
+msgstr "Workshop Navigation"
 
 #: cms/templates/widgets/header.html
 msgid "Outline"
