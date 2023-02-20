@@ -3795,6 +3795,9 @@ msgid ""
 "large number of learners, email messages to learners might take up to an "
 "hour to be sent."
 msgstr ""
+"Your email message was successfully queued for sending. In workshops with a "
+"large number of learners, email messages to learners might take up to an "
+"hour to be sent."
 
 #: lms/static/js/instructor_dashboard/send_email.js
 msgid ""
@@ -4333,6 +4336,11 @@ msgid ""
 "sites offered by MIT Open Learning, Wharton Executive Education, and Harvard"
 " Medical School."
 msgstr ""
+"Once your account is deleted, you cannot use it to take workshops on the edX "
+"app, edx.org, or any other site hosted by edX. This includes access to "
+"edx.org from your employer’s or university’s system and access to private "
+"sites offered by MIT Open Learning, Wharton Executive Education, and Harvard"
+" Medical School."
 
 #: lms/static/js/student_account/components/StudentAccountDeletion.jsx
 #: lms/static/js/student_account/views/account_settings_factory.js
@@ -4376,6 +4384,11 @@ msgid ""
 " sites offered by MIT Open Learning, Wharton Executive Education, and "
 "Harvard Medical School."
 msgstr ""
+"If you proceed, you will be unable to use this account to take workshops on "
+"the edX app, edx.org, or any other site hosted by edX. This includes access "
+"to edx.org from your employer’s or university’s system and access to private"
+" sites offered by MIT Open Learning, Wharton Executive Education, and "
+"Harvard Medical School."
 
 #: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
 msgid ""
@@ -7599,6 +7612,8 @@ msgid ""
 "Browse recently launched courses and see what\\'s new in your favorite "
 "subjects"
 msgstr ""
+"Browse recently launched workshops and see what\\'s new in your favorite "
+"subjects"
 
 #: lms/templates/learner_dashboard/explore_new_programs.underscore
 msgid "Explore New Programs"
@@ -7677,7 +7692,7 @@ msgstr ""
 
 #: lms/templates/learner_dashboard/program_details_view.underscore
 msgid "Upgrade All Remaining Courses ("
-msgstr ""
+msgstr "Upgrade All Remaining Workshops ("
 
 #: lms/templates/learner_dashboard/program_details_view.underscore
 msgid "${listPrice}"
@@ -7706,7 +7721,7 @@ msgstr ""
 #: lms/templates/learner_dashboard/program_details_view.underscore
 msgid ""
 "Complete courses on your schedule to ensure you stand out in your field!"
-msgstr ""
+msgstr "Complete workshops on your schedule to ensure you stand out in your field!"
 
 #: lms/templates/learner_dashboard/program_header_view.underscore
 msgid "{organization}\\'s logo"
@@ -7907,7 +7922,7 @@ msgstr ""
 
 #: lms/templates/verify_student/enrollment_confirmation_step.underscore
 msgid "A list of courses you have just enrolled in as a verified student"
-msgstr ""
+msgstr "A list of workshops you have just enrolled in as a verified student"
 
 #: lms/templates/verify_student/enrollment_confirmation_step.underscore
 msgid "Explore your course!"
@@ -8200,6 +8215,8 @@ msgid ""
 "All professional education courses are fee-based, and require payment to "
 "complete the enrollment process."
 msgstr ""
+"All professional education workshops are fee-based, and require payment to "
+"complete the enrollment process."
 
 #: lms/templates/verify_student/make_payment_step.underscore
 msgid "You have already verified your ID!"
